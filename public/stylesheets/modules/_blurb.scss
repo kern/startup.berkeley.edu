@@ -1,0 +1,45 @@
+@include def-module(blurb) {
+	@include font(blurb);
+	display: table;
+	background: url('/images/background.jpg') no-repeat center center;
+	background-size: cover;
+
+	em {
+		@include font(blurb, italic);
+	}
+
+	@include def-module(information) {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		padding: 40px 60px;
+		text-align: center;
+
+		h1 {
+			@include font(blurb, header);
+			margin-bottom: 10px;
+		}
+	}
+
+	@include def-module(icons-container) {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+	}
+
+	@include def-module(icon) {
+		float: left;
+		width: 33.333%;
+
+		img {
+			display: block;
+			height: 100px;
+			margin: 0 auto;
+			opacity: 0.75;
+
+			&:hover, &:focus {
+				opacity: 1;
+			}
+		}
+	}
+}

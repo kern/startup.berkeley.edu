@@ -1,0 +1,108 @@
+@include def-font(default) {
+	font-size: 14px;
+	color: $black;
+
+	@include def-font(bold) {
+		@include font(default);
+		font-weight: bold;
+	}
+
+	@include def-font(italic) {
+		@include font(default);
+		font-style: italic;
+	}
+
+	@include def-font(a) {
+		@include font(default);
+		color: $blue;
+
+		&:hover, &:focus {
+			color: $green;
+		}
+	}
+}
+
+@include def-font(header, nav) {
+	@include font(default, a);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@include def-font(footer) {
+	@include font(default);
+	font-size: 12px;
+
+	@include def-font(bold) {
+		@include font(footer);
+		font-weight: bold;
+	}
+
+	@include def-font(blue) {
+		@include font(footer, bold);
+		color: $blue;
+	}
+
+	@include def-font(green) {
+		@include font(footer, bold);
+		color: $green;
+	}
+
+	@include def-font(italic) {
+		@include font(footer);
+		font-style: italic;
+	}
+
+	@include def-font(a) {
+		@include font(footer);
+		color: $blue;
+
+		&:hover, &:focus {
+			color: $green;
+		}
+	}
+}
+
+@include def-font(button) {
+	@include font(default);
+	color: $white;
+}
+
+@include def-font(blurb) {
+	@include font(default);
+	color: white;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 30px;
+
+	@include def-font(italic) {
+		@include font(blurb);
+		font-style: italic;
+	}
+
+	@include def-font(header) {
+		@include font(blurb);
+		font-size: 64px;
+		font-weight: 500;
+		line-height: 80px;
+	}
+}
+
+@include def-font(events) {
+	@include font(default);
+
+	@include def-font(header) {
+		@include font(events);
+		font-weight: bold;
+	}
+
+	@include def-font(description) {
+		@include font(events);
+		color: $dark-gray;
+	}
+
+	@include def-font(location) {
+		@include font(events, description);
+		font-size: 12px;
+		font-style: italic;
+	}
+}
