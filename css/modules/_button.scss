@@ -1,5 +1,5 @@
 @include def-module(button) {
-	@include font(button);
+	@include font(white);
 	padding: 10px;
 	border-radius: 5px;
 	background: $blue;

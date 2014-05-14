@@ -1,21 +1,25 @@
-@import "keystone";
+@import "../bower_components/octave/octave";
 
 @import "colors";
 @import "fonts";
 
-@import "modules/blurb";
 @import "modules/button";
 @import "modules/events";
 @import "modules/page";
+@import "modules/page-footer";
+@import "modules/page-header";
+@import "modules/page-main";
 @import "modules/resources";
 @import "modules/root";
 
 html {
 	@include module-inline(root);
 	@include module-tree(page);
+	@include module-tree(page-footer);
+	@include module-tree(page-header);
+	@include module-tree(page-main);
 
 	@include priority(1) {
-		@include module-tree(blurb);
 		@include module-tree(events);
 		@include module-tree(resources);
 	}

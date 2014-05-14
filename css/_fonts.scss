@@ -1,0 +1,31 @@
+@include def-font(default) {
+    font-size: 14px;
+    color: $black;
+}
+
+@include def-font(blue)      { color: $blue; }
+@include def-font(dark-gray) { color: $dark-gray; }
+@include def-font(gray)      { color: $gray; }
+@include def-font(green)     { color: $green; }
+@include def-font(orange)    { color: $orange; }
+@include def-font(white)     { color: $white; }
+
+@include def-font(link) {
+    @include font(blue);
+
+    &:hover, &:focus {
+        @include font(green);
+    }
+}
+
+@include def-font(gray-link) {
+    @include font(gray);
+
+    &:hover, &:focus {
+        @include font(dark-gray);
+    }
+}
+
+@include def-font(small) {
+    font-size: 12px;
+}

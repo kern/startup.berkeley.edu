@@ -1,0 +1,10 @@
+@include def-module(page-main) {
+    @include clearfix;
+    background: $white;
+    border-bottom: 1px solid $gray;
+    padding-top: 61px;
+
+    @media (max-width: 959px) {
+        padding-top: 0;
+    }
+}

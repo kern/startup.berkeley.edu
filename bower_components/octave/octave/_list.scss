@@ -30,7 +30,7 @@
 }
 
 @function prepend($list, $value) {
-	$result: append((), $value);
+	$result: list($value);
 
 	@each $item in $list {
 		$result: append($result, $item);
@@ -39,7 +39,7 @@
 	@return $result;
 }
 
-@function list-remove($list, $n) {
+@function remove-nth($list, $n) {
 	@if $n <= 0 or $n > length($list) {
 		@warn "Index out of bounds.";
 	}
@@ -57,7 +57,7 @@
 	@return $result;
 }
 
-@function list-unique($list) {
+@function unique($list) {
 	$result: ();
 	@each $item in $list {
 		@if not index($result, $item) {
@@ -67,7 +67,7 @@
 	@return $result;
 }
 
-@function list-concat($list, $separator) {
+@function concat($list, $separator) {
 	$result: "";
 	$i: 1;
 
@@ -82,4 +82,14 @@
 	}
 
 	@return $result;
+}
+
+@function reverse($list) {
+    $result: ();
+
+    @each $item in $list {
+        $result: prepend($list, $item);
+    }
+
+    @return $result;
 }

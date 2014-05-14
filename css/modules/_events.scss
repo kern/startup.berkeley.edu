@@ -9,7 +9,6 @@
 	}
 
 	th {
-		@include font(events, header);
 		padding: 10px;
 		border-bottom: 1px solid $gray;
 	}
@@ -29,10 +28,10 @@
 	}
 
 	@include def-module(description) {
-		@include font(events, description);
+		@include font(small dark-gray);
 	}
 
 	@include def-module(location) {
-		@include font(events, location);
+		@include font(small dark-gray italic);
 	}
 }

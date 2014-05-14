@@ -1,0 +1,71 @@
+@include def-module(page-header) {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    width: 100%;
+    border-bottom: 1px solid $gray;
+    background: $white;
+
+    @media (max-width: 959px) {
+        position: static;
+    }
+
+    @include def-module(logo) {
+        display: block;
+        float: left;
+        text-indent: -999999px;
+        width: 220px;
+        height: 60px;
+        background: url("/images/logo.png") no-repeat center center;
+        background-size: 180px 29px;
+    }
+
+    @include def-module(legend) {
+        padding-left: 10px;
+        border-left: 1px solid $light-gray;
+        float: left;
+
+        li {
+            float: left;
+            line-height: 60px;
+        }
+    }
+
+    @include def-module(search) {
+        input {
+            height: 20px;
+            border: 1px solid $gray;
+            border-radius: 10px;
+        }
+    }
+
+    @include def-module(tech) {
+        @include font(orange);
+    }
+
+    @include def-module(business) {
+        @include font(blue);
+    }
+
+    @include def-module(funding) {
+        @include font(green);
+    }
+
+    @include def-module(social) {
+        float: right;
+
+        li {
+            float: left;
+        }
+
+        a {
+            @include font(gray-link);
+            display: block;
+            padding: 0 20px;
+        }
+
+        i {
+            line-height: 60px;
+        }
+    }
+}
