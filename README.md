@@ -6,8 +6,8 @@ Startup@Berkeley provides curated entrepreneurial resources for students at the 
 Usage
 -----
 
-    $ bundle
-    $ rackup
+    $ rake install
+    $ rake
 
 License
 -------
