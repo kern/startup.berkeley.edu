@@ -72,17 +72,17 @@ html .page-header_description, html .page-header > ._description, html .page-hea
   text-align: center; }
 html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta.header ~ * .header, html:not(#_1) .resources > meta._header ~ * ._header, html:not(#_1) .resources > meta._ ~ * ._header, html {
   font-size: 14px;
-  color: #333333; }
+  color: #173c4e; }
 html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer > meta.blue ~ * .blue, html .page-footer > meta._blue ~ * ._blue, html .page-footer > meta._ ~ * ._blue {
   color: #416b80; }
 html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta.description ~ * .description, html:not(#_1) .events > meta._description ~ * ._description, html:not(#_1) .events > meta._ ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta.location ~ * .location, html:not(#_1) .events > meta._location ~ * ._location, html:not(#_1) .events > meta._ ~ * ._location, html:not(#_1) .resources p {
   color: #777777; }
 html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header > meta.social ~ * .social a:hover, html .page-header > meta._social ~ * ._social a:hover, html .page-header > meta._ ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header > meta.social ~ * .social a:focus, html .page-header > meta._social ~ * ._social a:focus, html .page-header > meta._ ~ * ._social a:focus {
   color: #e6e6e6; }
-html a:hover, html a:focus, html .page-footer_green, html .page-footer > ._green, html .page-footer > meta.green ~ * .green, html .page-footer > meta._green ~ * ._green, html .page-footer > meta._ ~ * ._green {
-  color: #9bbf3b; }
 html .page-header_social a, html .page-header > ._social a, html .page-header > meta.social ~ * .social a, html .page-header > meta._social ~ * ._social a, html .page-header > meta._ ~ * ._social a, html:not(#_1):not(#_2) .button, html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
   color: white; }
+html a:hover, html a:focus, html .page-footer_yellow, html .page-footer > ._yellow, html .page-footer > meta.yellow ~ * .yellow, html .page-footer > meta._yellow ~ * ._yellow, html .page-footer > meta._ ~ * ._yellow {
+  color: #d7bd27; }
 html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
   font-size: 18px; }
 html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta.description ~ * .description, html:not(#_1) .events > meta._description ~ * ._description, html:not(#_1) .events > meta._ ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta.location ~ * .location, html:not(#_1) .events > meta._location ~ * ._location, html:not(#_1) .events > meta._ ~ * ._location, html .page-footer, html:not(#_1) .resources p {
@@ -92,7 +92,7 @@ html:not(#_1):not(#_2) .button {
   border-radius: 5px;
   background: #416b80; }
   html:not(#_1):not(#_2) .button:hover, html:not(#_1):not(#_2) .button:focus {
-    background: #9bbf3b; }
+    background: #d7bd27; }
 html:not(#_1) .events {
   float: left;
   width: 50%;
@@ -159,9 +159,9 @@ html .page-header {
     background-size: 480px; }
   html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
     padding: 20px;
-    background: rgba(51, 51, 51, 0.5);
-    border-top: 1px solid #333333;
-    border-bottom: 1px solid #333333; }
+    background: rgba(23, 60, 78, 0.75);
+    border-top: 1px solid #173c4e;
+    border-bottom: 1px solid #173c4e; }
   html .page-header_social, html .page-header > ._social, html .page-header > meta.social ~ * .social, html .page-header > meta._social ~ * ._social, html .page-header > meta._ ~ * ._social {
     width: 180px;
     margin: 0 auto; }

@@ -6,15 +6,15 @@
 @include def-font(blue)      { color: $blue; }
 @include def-font(dark-gray) { color: $dark-gray; }
 @include def-font(gray)      { color: $gray; }
-@include def-font(green)     { color: $green; }
 @include def-font(orange)    { color: $orange; }
 @include def-font(white)     { color: $white; }
+@include def-font(yellow)    { color: $yellow; }
 
 @include def-font(link) {
     @include font(blue);
 
     &:hover, &:focus {
-        @include font(green);
+        @include font(yellow);
     }
 }
 

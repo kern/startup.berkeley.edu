@@ -20,8 +20,8 @@
         @include font(blue);
     }
 
-    @include def-module(green) {
-        @include font(green);
+    @include def-module(yellow) {
+        @include font(yellow);
     }
 
     @include def-module(about) {
