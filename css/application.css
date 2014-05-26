@@ -52,7 +52,7 @@ audio:not([controls]), [hidden] {
 meta {
   display: none !important; }
 
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html {
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta.header ~ * .header, html:not(#_1) .resources > meta._header ~ * ._header, html:not(#_1) .resources > meta._ ~ * ._header, html {
   color: black;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 12px;
@@ -62,30 +62,30 @@ html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .res
   line-height: 20px;
   text-decoration: none;
   text-transform: none; }
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html strong,
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta.header ~ * .header, html:not(#_1) .resources > meta._header ~ * ._header, html:not(#_1) .resources > meta._ ~ * ._header, html strong,
 html h1, html h2, html h3, html h4, html h5, html h6,
 html th {
   font-weight: bold; }
-html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description, html em {
+html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta.location ~ * .location, html:not(#_1) .events > meta._location ~ * ._location, html:not(#_1) .events > meta._ ~ * ._location, html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description, html em {
   font-style: italic; }
-html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
   text-align: center; }
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html {
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta.header ~ * .header, html:not(#_1) .resources > meta._header ~ * ._header, html:not(#_1) .resources > meta._ ~ * ._header, html {
   font-size: 14px;
   color: #333333; }
-html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer > meta[data-use~=blue] ~ * .blue, html .page-footer > meta[data-import~=blue] ~ * ._blue, html .page-footer > meta[data-import-all] ~ * ._blue {
+html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer > meta.blue ~ * .blue, html .page-footer > meta._blue ~ * ._blue, html .page-footer > meta._ ~ * ._blue {
   color: #416b80; }
-html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta[data-use~=description] ~ * .description, html:not(#_1) .events > meta[data-import~=description] ~ * ._description, html:not(#_1) .events > meta[data-import-all] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html:not(#_1) .resources p {
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta.description ~ * .description, html:not(#_1) .events > meta._description ~ * ._description, html:not(#_1) .events > meta._ ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta.location ~ * .location, html:not(#_1) .events > meta._location ~ * ._location, html:not(#_1) .events > meta._ ~ * ._location, html:not(#_1) .resources p {
   color: #777777; }
-html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header > meta[data-use~=social] ~ * .social a:hover, html .page-header > meta[data-import~=social] ~ * ._social a:hover, html .page-header > meta[data-import-all] ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header > meta[data-use~=social] ~ * .social a:focus, html .page-header > meta[data-import~=social] ~ * ._social a:focus, html .page-header > meta[data-import-all] ~ * ._social a:focus {
+html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header > meta.social ~ * .social a:hover, html .page-header > meta._social ~ * ._social a:hover, html .page-header > meta._ ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header > meta.social ~ * .social a:focus, html .page-header > meta._social ~ * ._social a:focus, html .page-header > meta._ ~ * ._social a:focus {
   color: #e6e6e6; }
-html a:hover, html a:focus, html .page-footer_green, html .page-footer > ._green, html .page-footer > meta[data-use~=green] ~ * .green, html .page-footer > meta[data-import~=green] ~ * ._green, html .page-footer > meta[data-import-all] ~ * ._green {
+html a:hover, html a:focus, html .page-footer_green, html .page-footer > ._green, html .page-footer > meta.green ~ * .green, html .page-footer > meta._green ~ * ._green, html .page-footer > meta._ ~ * ._green {
   color: #9bbf3b; }
-html .page-header_social a, html .page-header > ._social a, html .page-header > meta[data-use~=social] ~ * .social a, html .page-header > meta[data-import~=social] ~ * ._social a, html .page-header > meta[data-import-all] ~ * ._social a, html:not(#_1):not(#_2) .button, html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+html .page-header_social a, html .page-header > ._social a, html .page-header > meta.social ~ * .social a, html .page-header > meta._social ~ * ._social a, html .page-header > meta._ ~ * ._social a, html:not(#_1):not(#_2) .button, html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
   color: white; }
-html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
   font-size: 18px; }
-html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta[data-use~=description] ~ * .description, html:not(#_1) .events > meta[data-import~=description] ~ * ._description, html:not(#_1) .events > meta[data-import-all] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html .page-footer, html:not(#_1) .resources p {
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta.description ~ * .description, html:not(#_1) .events > meta._description ~ * ._description, html:not(#_1) .events > meta._ ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta.location ~ * .location, html:not(#_1) .events > meta._location ~ * ._location, html:not(#_1) .events > meta._ ~ * ._location, html .page-footer, html:not(#_1) .resources p {
   font-size: 12px; }
 html:not(#_1):not(#_2) .button {
   padding: 10px;
@@ -115,23 +115,23 @@ html .page {
   min-width: 960px; }
 html .page-footer {
   padding: 20px; }
-  html .page-footer_left, html .page-footer > ._left, html .page-footer > meta[data-use~=left] ~ * .left, html .page-footer > meta[data-import~=left] ~ * ._left, html .page-footer > meta[data-import-all] ~ * ._left {
+  html .page-footer_left, html .page-footer > ._left, html .page-footer > meta.left ~ * .left, html .page-footer > meta._left ~ * ._left, html .page-footer > meta._ ~ * ._left {
     float: left;
     width: 50%;
     text-align: right;
     padding-right: 10px; }
-  html .page-footer_right, html .page-footer > ._right, html .page-footer > meta[data-use~=right] ~ * .right, html .page-footer > meta[data-import~=right] ~ * ._right, html .page-footer > meta[data-import-all] ~ * ._right {
+  html .page-footer_right, html .page-footer > ._right, html .page-footer > meta.right ~ * .right, html .page-footer > meta._right ~ * ._right, html .page-footer > meta._ ~ * ._right {
     float: right;
     width: 50%;
     text-align: left;
     padding-left: 10px; }
-  html .page-footer_about, html .page-footer > ._about, html .page-footer > meta[data-use~=about] ~ * .about, html .page-footer > meta[data-import~=about] ~ * ._about, html .page-footer > meta[data-import-all] ~ * ._about {
+  html .page-footer_about, html .page-footer > ._about, html .page-footer > meta.about ~ * .about, html .page-footer > meta._about ~ * ._about, html .page-footer > meta._ ~ * ._about {
     overflow: hidden;
     width: 640px;
     margin: 0 auto; }
-    html .page-footer_about p, html .page-footer > ._about p, html .page-footer > meta[data-use~=about] ~ * .about p, html .page-footer > meta[data-import~=about] ~ * ._about p, html .page-footer > meta[data-import-all] ~ * ._about p {
+    html .page-footer_about p, html .page-footer > ._about p, html .page-footer > meta.about ~ * .about p, html .page-footer > meta._about ~ * ._about p, html .page-footer > meta._ ~ * ._about p {
       margin-bottom: 20px; }
-  html .page-footer_extra-information, html .page-footer > ._extra-information, html .page-footer > meta[data-use~=extra-information] ~ * .extra-information, html .page-footer > meta[data-import~=extra-information] ~ * ._extra-information, html .page-footer > meta[data-import-all] ~ * ._extra-information {
+  html .page-footer_extra-information, html .page-footer > ._extra-information, html .page-footer > meta.extra-information ~ * .extra-information, html .page-footer > meta._extra-information ~ * ._extra-information, html .page-footer > meta._ ~ * ._extra-information {
     text-align: center; }
 html .page-header {
   zoom: 1;
@@ -150,28 +150,28 @@ html .page-header {
     height: 0;
     overflow: hidden;
     clear: both; }
-  html .page-header_logo, html .page-header > ._logo, html .page-header > meta[data-use~=logo] ~ * .logo, html .page-header > meta[data-import~=logo] ~ * ._logo, html .page-header > meta[data-import-all] ~ * ._logo {
+  html .page-header_logo, html .page-header > ._logo, html .page-header > meta.logo ~ * .logo, html .page-header > meta._logo ~ * ._logo, html .page-header > meta._ ~ * ._logo {
     display: block;
     text-indent: -999999px;
     height: 80px;
     margin: 0 auto 20px;
     background: url("/images/logo.png") no-repeat center center;
     background-size: 480px; }
-  html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+  html .page-header_description, html .page-header > ._description, html .page-header > meta.description ~ * .description, html .page-header > meta._description ~ * ._description, html .page-header > meta._ ~ * ._description {
     padding: 20px;
     background: rgba(51, 51, 51, 0.5);
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333; }
-  html .page-header_social, html .page-header > ._social, html .page-header > meta[data-use~=social] ~ * .social, html .page-header > meta[data-import~=social] ~ * ._social, html .page-header > meta[data-import-all] ~ * ._social {
+  html .page-header_social, html .page-header > ._social, html .page-header > meta.social ~ * .social, html .page-header > meta._social ~ * ._social, html .page-header > meta._ ~ * ._social {
     width: 180px;
     margin: 0 auto; }
-    html .page-header_social li, html .page-header > ._social li, html .page-header > meta[data-use~=social] ~ * .social li, html .page-header > meta[data-import~=social] ~ * ._social li, html .page-header > meta[data-import-all] ~ * ._social li {
+    html .page-header_social li, html .page-header > ._social li, html .page-header > meta.social ~ * .social li, html .page-header > meta._social ~ * ._social li, html .page-header > meta._ ~ * ._social li {
       float: left;
       width: 60px; }
-    html .page-header_social a, html .page-header > ._social a, html .page-header > meta[data-use~=social] ~ * .social a, html .page-header > meta[data-import~=social] ~ * ._social a, html .page-header > meta[data-import-all] ~ * ._social a {
+    html .page-header_social a, html .page-header > ._social a, html .page-header > meta.social ~ * .social a, html .page-header > meta._social ~ * ._social a, html .page-header > meta._ ~ * ._social a {
       display: block;
       padding: 0 20px; }
-    html .page-header_social i, html .page-header > ._social i, html .page-header > meta[data-use~=social] ~ * .social i, html .page-header > meta[data-import~=social] ~ * ._social i, html .page-header > meta[data-import-all] ~ * ._social i {
+    html .page-header_social i, html .page-header > ._social i, html .page-header > meta.social ~ * .social i, html .page-header > meta._social ~ * ._social i, html .page-header > meta._ ~ * ._social i {
       line-height: 60px; }
 html .page-main {
   zoom: 1;
@@ -214,17 +214,17 @@ html:not(#_1) .resources {
     display: block;
     text-indent: -20px;
     padding-left: 20px; }
-  html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header {
+  html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta.header ~ * .header, html:not(#_1) .resources > meta._header ~ * ._header, html:not(#_1) .resources > meta._ ~ * ._header {
     padding: 10px;
     border-bottom: 2px solid #e6e6e6;
     margin-bottom: 10px; }
-  html:not(#_1) .resources_legend, html:not(#_1) .resources > ._legend, html:not(#_1) .resources > meta[data-use~=legend] ~ * .legend, html:not(#_1) .resources > meta[data-import~=legend] ~ * ._legend, html:not(#_1) .resources > meta[data-import-all] ~ * ._legend {
+  html:not(#_1) .resources_legend, html:not(#_1) .resources > ._legend, html:not(#_1) .resources > meta.legend ~ * .legend, html:not(#_1) .resources > meta._legend ~ * ._legend, html:not(#_1) .resources > meta._ ~ * ._legend {
     float: right; }
-  html:not(#_1) .resources_left, html:not(#_1) .resources > ._left, html:not(#_1) .resources > meta[data-use~=left] ~ * .left, html:not(#_1) .resources > meta[data-import~=left] ~ * ._left, html:not(#_1) .resources > meta[data-import-all] ~ * ._left {
+  html:not(#_1) .resources_left, html:not(#_1) .resources > ._left, html:not(#_1) .resources > meta.left ~ * .left, html:not(#_1) .resources > meta._left ~ * ._left, html:not(#_1) .resources > meta._ ~ * ._left {
     float: left;
     width: 50%;
     padding: 0 10px; }
-  html:not(#_1) .resources_right, html:not(#_1) .resources > ._right, html:not(#_1) .resources > meta[data-use~=right] ~ * .right, html:not(#_1) .resources > meta[data-import~=right] ~ * ._right, html:not(#_1) .resources > meta[data-import-all] ~ * ._right {
+  html:not(#_1) .resources_right, html:not(#_1) .resources > ._right, html:not(#_1) .resources > meta.right ~ * .right, html:not(#_1) .resources > meta._right ~ * ._right, html:not(#_1) .resources > meta._ ~ * ._right {
     float: left;
     width: 50%;
     padding: 0 10px; }

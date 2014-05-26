@@ -51,17 +51,17 @@ $current-module: "";
                 }
 
                 @if $module-use-selector-enabled {
-                    $use-selector: "#{$parent} > meta[data-use~=#{$segment}] ~ * .#{$segment}";
+                    $use-selector: "#{$parent} > meta.#{$segment} ~ * .#{$segment}";
                     $new-selectors: append($new-selectors, $use-selector);
                 }
 
                 @if $module-import-selector-enabled {
-                    $import-selector: "#{$parent} > meta[data-import~=#{$segment}] ~ * ._#{$segment}";
+                    $import-selector: "#{$parent} > meta._#{$segment} ~ * ._#{$segment}";
                     $new-selectors: append($new-selectors, $import-selector);
                 }
 
                 @if $module-import-all-selector-enabled {
-                    $import-all-selector: "#{$parent} > meta[data-import-all] ~ * ._#{$segment}";
+                    $import-all-selector: "#{$parent} > meta._ ~ * ._#{$segment}";
                     $new-selectors: append($new-selectors, $import-all-selector);
                 }
             }
