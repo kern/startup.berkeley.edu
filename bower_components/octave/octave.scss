@@ -1,12 +1,14 @@
 @import "octave/debug";
+@import "octave/error";
 @import "octave/list";
 @import "octave/tree";
-@import "octave/record";
 
 @import "octave/resource";
 @import "octave/priority";
 @import "octave/font";
+@import "octave/flag";
 @import "octave/module";
+@import "octave/breakpoint";
 
 @import "octave/clearfix";
 @import "octave/reset";

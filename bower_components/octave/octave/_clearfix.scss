@@ -1,4 +1,4 @@
-%clearfix {
+@mixin clearfix {
 	zoom: 1;
 
 	&:before {
@@ -15,8 +15,4 @@
 		overflow: hidden;
 		clear: both;
 	}
-}
-
-@mixin clearfix {
-	@extend %clearfix;
 }

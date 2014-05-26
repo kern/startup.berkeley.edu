@@ -20,35 +20,12 @@
 
     <body>
         <div class="page">
-            <header class="page-header __tech __business __funding __search">
+            <header class="page-header">
                 <a href="#" class="_logo">Startup@Berkeley</a>
 
-                <ul class="_legend" hidden>
-                    <li class="_tech">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-terminal fa-stack-1x"></i>
-                        </span>
-                    </li>
-
-                    <li class="_business">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-suitcase fa-stack-1x"></i>
-                        </span>
-                    </li>
-
-                    <li class="_funding">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-money fa-stack-1x"></i>
-                        </span>
-                    </li>
-
-                    <li class="_search">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-search fa-stack-1x"></i>
-                        </span>
-                        <input type="search" />
-                    </li>
-                </ul>
+                <p class="_description">
+                    <strong>Learn. Build. Fund.</strong> We connect student entrepreneurs with UC Berkeley's startup ecosystem.
+                </p>
 
                 <ul class="_social">
                     <li>
@@ -72,7 +49,9 @@
             </header>
 
             <main class="page-main">
-                <section class="events __description __location" ng-controller="Events">
+                <section class="events" ng-controller="Events">
+                    <meta data-import="description location">
+
                     <table>
                         <thead>
                             <tr>
@@ -99,124 +78,200 @@
                 </section>
 
                 <section class="resources">
-                    <div class="resources_header">
-                        Resources
-                    </div>
+                    <meta data-import="description">
+
+                    <div class="_header">Resources</div>
 
                     <div class="_left">
                         <h2>Student Groups</h2>
+
                         <ul>
-                            <li><a href="http://csua.berkeley.edu/">Computer Science Undergraduate Association</a></li>
-                            <li><a href="http://hackersatberkeley.com/">Hackers@Berkeley</a></li>
-                            <li><a href="http://www.innod.net/">Innovative Design</a></li>
+                            <li>
+                                <a href="http://csua.berkeley.edu/">Computer Science Undergraduate Association</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://hackersatberkeley.com/">Hackers@Berkeley</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.innod.net/">Innovative Design</a>
+                                <p></p>
+                            </li>
                         </ul>
 
                         <h2>Competitions</h2>
+
                         <ul>
-                            <li><a href="http://bigideas.berkeley.edu/">Big Ideas@Berkeley</a></li>
-                            <li><a href="http://bplan.berkeley.edu/">Bplan: Berkeley Startup Competition</a></li>
-                            <li><a href="http://www.gsvc.org/about_gsvc/our_partners/haas_school_of_business_-_uc_berkeley/">Global Social Venture Competition</a></li>
+                            <li>
+                                <a href="http://bigideas.berkeley.edu/">Big Ideas@Berkeley</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://bplan.berkeley.edu/">Bplan: Berkeley Startup Competition</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.gsvc.org/about_gsvc/our_partners/haas_school_of_business_-_uc_berkeley/">Global Social Venture Competition</a>
+                                <p></p>
+                            </li>
                         </ul>
 
                         <h2>Entrepreneurship Centers</h2>
+
                         <ul>
-                            <li><a href="http://cet.berkeley.edu/">College of Engineering Center for Entrepreneurship and Technology</a></li>
-                            <li><a href="http://entrepreneurship.berkeley.edu/">Haas School of Business Lester Center for Entrepreneurship</a></li>
+                            <li>
+                                <a href="http://cet.berkeley.edu/">College of Engineering Center for Entrepreneurship and Technology</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://entrepreneurship.berkeley.edu/">Haas School of Business Lester Center for Entrepreneurship</a>
+                                <p></p>
+                            </li>
                         </ul>
 
                         <h2>Entrepreneurship Associations</h2>
+
                         <ul>
-                            <li><a href="http://haas.campusgroups.com/ea">Berkeley Entrepreneurship Association</a></li>
-                            <li><a href="http://bpep.berkeley.edu/">Berkeley Postdoctoral Entrepreneurs Program</a></li>
-                            <li><a href="http://csge.berkeley.edu/">Computer Science Graduate Entrepreneurs</a></li>
+                            <li>
+                                <a href="http://haas.campusgroups.com/ea">Berkeley Entrepreneurship Association</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://bpep.berkeley.edu/">Berkeley Postdoctoral Entrepreneurs Program</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://csge.berkeley.edu/">Computer Science Graduate Entrepreneurs</a>
+                                <p></p>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="_right">
                         <h2>Incubators</h2>
+
                         <ul>
-                            <li><a href="http://foundry.citris-uc.org/">The Foundry @ CITRIS</a></li>
-                            <li><a href="http://skydeck.berkeley.edu">SkyDeck</a></li>
-                            <li><a href="http://www.freeventures.org/">Free Ventures</a></li>
+                            <li>
+                                <a href="http://foundry.citris-uc.org/">The Foundry @ CITRIS</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://skydeck.berkeley.edu">SkyDeck</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.freeventures.org/">Free Ventures</a>
+                                <p></p>
+                            </li>
                         </ul>
 
                         <h2>Funding Resources</h2>
+
                         <ul>
-                            <li><a href="http://www.alsop-louie.com/">Alsop Louie Partners</a></li>
-                            <li><a href="http://beepartners.vc/">Bee Partners</a></li>
-                            <li><a href="http://dormroomfund.com/">Dorm Room Fund</a></li>
+                            <li>
+                                <a href="http://www.alsop-louie.com/">Alsop Louie Partners</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://beepartners.vc/">Bee Partners</a>
+                                <p></p>
+                            </li>
+
+                            <li>
+                                <a href="http://dormroomfund.com/">Dorm Room Fund</a>
+                                <p></p>
+                            </li>
                         </ul>
 
                         <h2>Alumni</h2>
+
                         <ul>
-                            <li><a href="http://calfounders.com/">CalFounders</a></li>
+                            <li>
+                                <a href="http://calfounders.com/">CalFounders</a>
+                                <p></p>
+                            </li>
                         </ul>
                     </div>
                 </section>
             </main>
 
-            <footer class="page-footer __left __right __blue __green">
+            <footer class="page-footer">
+                <meta data-import="left right green blue">
+
                 <div class="_about">
                     <div class="_left">
                         <h2>About <span class="_blue">Startup</span><span class="_green">@</span><span class="_blue">Berkeley</span></h2>
 
                         <p>
-                        <em>Startup@Berkeley</em> connects students at the University of California, Berkeley to the greater entrepreneurial ecosystem. Members of ST@B have gone on to found a number of their own companies, including <a href="http://likeness.com/">Ness</a>, <a href="http://copilotlabs.com/">Copilot</a>, <a href="http://crazyegg.com/">CrazyEgg</a>, and <a href="http://www.kissmetrics.com/">KISSmetrics</a>.
+                            <em>Startup@Berkeley</em> connects student entrepreneurs with the University of California, Berkeley's startup ecosystem through curated online resources. Members of ST@B have gone on to found a number of their own companies, including <a href="http://likeness.com/">Ness</a>, <a href="http://copilotlabs.com/">Copilot</a>, <a href="http://crazyegg.com/">CrazyEgg</a>, and <a href="http://www.kissmetrics.com/">KISSmetrics</a>.
                         </p>
 
-                        <p><a href="mailto:team@startup.berkeley.edu" class="button">Get involved</a></p>
+                        <p>
+                            <a href="mailto:team@startup.berkeley.edu" class="button">Get involved</a>
+                        </p>
                     </div>
 
                     <div class="_right">
                         <p>
-                        <strong>President:</strong> <a href="http://kern.io">Alex Kern</a>
+                            <strong>President:</strong> <a href="http://kern.io">Alex Kern</a>
                         </p>
 
                         <p>
-                        <strong>Team:</strong>
-                        <a href="http://linkedin.com/pub/alexander-gavriel/68/171/77">Alex Gavriel</a>,
-                        <a href="http://linkedin.com/in/alfongj">Alfonso Gómez-Jordana</a>,
-                        <a href="http://linkedin.com/pub/olive-chang-liu/63/8b6/ab3">Chang Liu</a>,
-                        <a href="http://dhruvarora.me/">Dhruv Arora</a>,
-                        <a href="http://about.me/eva_zheng">Eva Zheng</a>,
-                        <a href="http://linkedin.com/pub/joshua-shirazi/40/585/84">Joshua Shirazi</a>,
-                        <a href="http://linkedin.com/in/moulaydriss">Moulay Driss</a>,
-                        <a href="http://linkedin.com/pub/nicholas-moschopoulos/80/801/b2">Nicholas Moschopoulos</a>,
-                        <a href="http://rtsao.com">Rachel Tsao</a>,
-                        <a href="http://linkedin.com/pub/rick-ling/5b/87/700">Rick Ling</a>,
-                        <a href="http://linkedin.com/pub/ryan-kang/38/595/1ba">Ryan Kang</a>,
-                        <a href="http://linkedin.com/pub/sargunjot-kaur/45/429/297/">Sargun Kaur</a>,
-                        <a href="http://linkedin.com/pub/sebastian-merz/58/83/141">Sebastian Merz</a>,
-                        <a href="http://stevenbuccini.com/">Steven Buccini</a>,
-                        <a href="http://linkedin.com/pub/tom-yet/73/570/505/">Tom Yet</a>
+                            <strong>Team:</strong>
+                            <a href="http://linkedin.com/pub/alexander-gavriel/68/171/77">Alex Gavriel</a>,
+                            <a href="http://linkedin.com/in/alfongj">Alfonso Gómez-Jordana</a>,
+                            <a href="http://linkedin.com/pub/olive-chang-liu/63/8b6/ab3">Chang Liu</a>,
+                            <a href="http://dhruvarora.me/">Dhruv Arora</a>,
+                            <a href="http://about.me/eva_zheng">Eva Zheng</a>,
+                            <a href="http://linkedin.com/pub/joshua-shirazi/40/585/84">Joshua Shirazi</a>,
+                            <a href="http://linkedin.com/in/moulaydriss">Moulay Driss</a>,
+                            <a href="http://linkedin.com/pub/nicholas-moschopoulos/80/801/b2">Nicholas Moschopoulos</a>,
+                            <a href="http://rtsao.com">Rachel Tsao</a>,
+                            <a href="http://linkedin.com/pub/rick-ling/5b/87/700">Rick Ling</a>,
+                            <a href="http://linkedin.com/pub/ryan-kang/38/595/1ba">Ryan Kang</a>,
+                            <a href="http://linkedin.com/pub/sargunjot-kaur/45/429/297/">Sargun Kaur</a>,
+                            <a href="http://linkedin.com/pub/sebastian-merz/58/83/141">Sebastian Merz</a>,
+                            <a href="http://stevenbuccini.com/">Steven Buccini</a>,
+                            <a href="http://linkedin.com/pub/tom-yet/73/570/505/">Tom Yet</a>
                         </p>
 
                         <p>
-                        <strong>Alumni:</strong> Rohit Turumella, Paul Fang, Tarun Chaudhry, Corey Reese, Hiten Shah, Nima Wedlake, Krutal Desai, Eli Chait, George Dy, Kevin Gong, Brent Locks
+                            <strong>Alumni:</strong> Rohit Turumella, Paul Fang, Tarun Chaudhry, Corey Reese, Hiten Shah, Nima Wedlake, Krutal Desai, Eli Chait, George Dy, Kevin Gong, Brent Locks
                         </p>
                     </div>
                 </div>
 
                 <div class="_extra-information">
                     <p>
-                    <a href="http://www.ocf.berkeley.edu"><img src="http://www.ocf.berkeley.edu/images/hosted-logos/ocfbadge_platinum.png" alt="Hosted by the OCF" /></a>
+                        <a href="http://www.ocf.berkeley.edu"><img src="http://www.ocf.berkeley.edu/images/hosted-logos/ocfbadge_platinum.png" alt="Hosted by the OCF" /></a>
                     </p>
 
                     <p>
-                    <a href="https://www.facebook.com/groups/startupatberkeley/">Facebook</a>
-                    &middot;
-                    <a href="http://twitter.com/StartupAtBerk">Twitter</a>
-                    &middot;
-                    <a href="http://bit.ly/stabnewsletter">Newsletter</a>
-                    &middot;
-                    <a href="mailto:team@startup.berkeley.edu">Contact</a>
-                    &middot;
-                    Made at <strong>Cal</strong> on a &#xF8FF; with &hearts;.
+                        <a href="https://www.facebook.com/groups/startupatberkeley/">Facebook</a>
+                        &middot;
+                        <a href="http://twitter.com/StartupAtBerk">Twitter</a>
+                        &middot;
+                        <a href="http://bit.ly/stabnewsletter">Newsletter</a>
+                        &middot;
+                        <a href="mailto:team@startup.berkeley.edu">Contact</a>
+                        &middot;
+                        Made at <strong>Cal</strong> on a &#xF8FF; with &hearts;.
                     </p>
 
                     <p>
-                    Released under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
-                    <a href="https://github.com/kern/startup.berkeley.edu">Fork us</a>.
+                        Released under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+                        <a href="https://github.com/kern/startup.berkeley.edu">Fork us</a>.
                     </p>
                 </div>
             </footer>

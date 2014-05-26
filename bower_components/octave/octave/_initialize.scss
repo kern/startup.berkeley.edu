@@ -1,5 +1,8 @@
 @include reset;
 
+// Fonts
+// =====
+
 @include def-font(default) {
     color: black;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -23,3 +26,31 @@
 @include def-font(uppercase) {
     text-transform: uppercase;
 }
+
+@include def-font(underline) {
+    text-decoration: underline;
+}
+
+@include def-font(center) {
+    text-align: center;
+}
+
+@include def-font(left) {
+    text-align: left;
+}
+
+@include def-font(right) {
+    text-align: right;
+}
+
+// Breakpoints
+// ===========
+
+@include def-breakpoint(screen, "only screen");
+@include def-breakpoint(phone, "(max-width: 767px)");
+@include def-breakpoint(tablet, "(min-width: 768px) and (max-width: 991px)");
+@include def-breakpoint(mobile, "(max-width: 991px)");
+@include def-breakpoint(desktop, "(min-width: 992px)");
+@include def-breakpoint(retina, "(-webkit-min-device-pixel-ratio: 2)", "(min-resolution: 192dpi)");
+@include def-breakpoint(portrait, "(orientation: portrait)");
+@include def-breakpoint(landscape, "(orientation: landscape)");

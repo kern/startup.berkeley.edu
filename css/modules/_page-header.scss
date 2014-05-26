@@ -1,65 +1,38 @@
 @include def-module(page-header) {
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    width: 100%;
+    @include clearfix;
     border-bottom: 1px solid $gray;
-    background: $white;
-
-    @media (max-width: 959px) {
-        position: static;
-    }
+    padding: 50px 0;
+    background: url("/images/background.jpg") no-repeat center bottom;
+    background-size: cover;
 
     @include def-module(logo) {
         display: block;
-        float: left;
         text-indent: -999999px;
-        width: 220px;
-        height: 60px;
+        height: 80px;
+        margin: 0 auto 20px;
         background: url("/images/logo.png") no-repeat center center;
-        background-size: 180px 29px;
+        background-size: 480px;
     }
 
-    @include def-module(legend) {
-        padding-left: 10px;
-        border-left: 1px solid $light-gray;
-        float: left;
-
-        li {
-            float: left;
-            line-height: 60px;
-        }
-    }
-
-    @include def-module(search) {
-        input {
-            height: 20px;
-            border: 1px solid $gray;
-            border-radius: 10px;
-        }
-    }
-
-    @include def-module(tech) {
-        @include font(orange);
-    }
-
-    @include def-module(business) {
-        @include font(blue);
-    }
-
-    @include def-module(funding) {
-        @include font(green);
+    @include def-module(description) {
+        @include font(center large white italic);
+        padding: 20px;
+        background: transparentize($black, 0.5);
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
     }
 
     @include def-module(social) {
-        float: right;
+        width: 180px;
+        margin: 0 auto;
 
         li {
             float: left;
+            width: 60px;
         }
 
         a {
-            @include font(gray-link);
+            @include font(white-link);
             display: block;
             padding: 0 20px;
         }

@@ -1,3 +1,18 @@
+@function tree-get($tree, $path, $default: null) {
+	@if $path == () {
+		@return $tree;
+	} @else {
+		$head: head($path);
+		$tail: tail($path);
+
+		@if map-has-key($tree, $head) {
+			@return tree-get(map-get($tree, $head), $tail, $default);
+		} @else {
+		    @return $default;
+        }
+	}
+}
+
 @function tree-add($tree, $path) {
 	@if $path == () {
 		@return ();
@@ -5,10 +20,10 @@
 		$head: head($path);
 		$tail: tail($path);
 
-		$subtree: ();
+        $subtree: ();
 		@if map-has-key($tree, $head) {
 			$subtree: map-get($tree, $head);
-		}
+        }
 
 		$subtree: tree-add($subtree, $tail);
 		$tree: map-merge($tree, ($head: $subtree));

@@ -1,21 +1,11 @@
-html .page-main, html:not(#_1) .resources {
-  zoom: 1; }
-  html .page-main:before, html:not(#_1) .resources:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html .page-main:after, html:not(#_1) .resources:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-
 * {
   box-sizing: border-box; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,10 +15,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: inherit;
   font-size: 100%;
   vertical-align: baseline; }
-
-body {
-  color: black;
-  background: white; }
 
 ol, ul {
   list-style: none; }
@@ -49,7 +35,8 @@ a {
   a img {
     border: none; }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, main {
+article, aside, canvas, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section, summary, main {
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,7 +49,10 @@ audio, canvas, video {
 audio:not([controls]), [hidden] {
   display: none; }
 
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources.__header ._header, html:not(#_1) .resources.__ ._header, html {
+meta {
+  display: none !important; }
+
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html {
   color: black;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 12px;
@@ -72,28 +62,30 @@ html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .res
   line-height: 20px;
   text-decoration: none;
   text-transform: none; }
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources.__header ._header, html:not(#_1) .resources.__ ._header, html strong,
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html strong,
 html h1, html h2, html h3, html h4, html h5, html h6,
 html th {
   font-weight: bold; }
-html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events.__location ._location, html:not(#_1) .events.__ ._location, html em {
+html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description, html em {
   font-style: italic; }
-html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources.__header ._header, html:not(#_1) .resources.__ ._header, html {
+html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+  text-align: center; }
+html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header, html {
   font-size: 14px;
   color: #333333; }
-html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer.__blue ._blue, html .page-footer.__ ._blue, html .page-header_business, html .page-header > ._business, html .page-header.__business ._business, html .page-header.__ ._business {
+html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer > meta[data-use~=blue] ~ * .blue, html .page-footer > meta[data-import~=blue] ~ * ._blue, html .page-footer > meta[data-import-all] ~ * ._blue {
   color: #416b80; }
-html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header.__social ._social a:hover, html .page-header.__ ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header.__social ._social a:focus, html .page-header.__ ._social a:focus, html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events.__description ._description, html:not(#_1) .events.__ ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events.__location ._location, html:not(#_1) .events.__ ._location {
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta[data-use~=description] ~ * .description, html:not(#_1) .events > meta[data-import~=description] ~ * ._description, html:not(#_1) .events > meta[data-import-all] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html:not(#_1) .resources p {
   color: #777777; }
-html .page-header_social a, html .page-header > ._social a, html .page-header.__social ._social a, html .page-header.__ ._social a {
+html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header > meta[data-use~=social] ~ * .social a:hover, html .page-header > meta[data-import~=social] ~ * ._social a:hover, html .page-header > meta[data-import-all] ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header > meta[data-use~=social] ~ * .social a:focus, html .page-header > meta[data-import~=social] ~ * ._social a:focus, html .page-header > meta[data-import-all] ~ * ._social a:focus {
   color: #e6e6e6; }
-html a:hover, html a:focus, html .page-footer_green, html .page-footer > ._green, html .page-footer.__green ._green, html .page-footer.__ ._green, html .page-header_funding, html .page-header > ._funding, html .page-header.__funding ._funding, html .page-header.__ ._funding {
+html a:hover, html a:focus, html .page-footer_green, html .page-footer > ._green, html .page-footer > meta[data-use~=green] ~ * .green, html .page-footer > meta[data-import~=green] ~ * ._green, html .page-footer > meta[data-import-all] ~ * ._green {
   color: #9bbf3b; }
-html .page-header_tech, html .page-header > ._tech, html .page-header.__tech ._tech, html .page-header.__ ._tech {
-  color: #f38630; }
-html:not(#_1):not(#_2) .button {
+html .page-header_social a, html .page-header > ._social a, html .page-header > meta[data-use~=social] ~ * .social a, html .page-header > meta[data-import~=social] ~ * ._social a, html .page-header > meta[data-import-all] ~ * ._social a, html:not(#_1):not(#_2) .button, html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
   color: white; }
-html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events.__description ._description, html:not(#_1) .events.__ ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events.__location ._location, html:not(#_1) .events.__ ._location, html .page-footer {
+html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+  font-size: 18px; }
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events > meta[data-use~=description] ~ * .description, html:not(#_1) .events > meta[data-import~=description] ~ * ._description, html:not(#_1) .events > meta[data-import-all] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events > meta[data-use~=location] ~ * .location, html:not(#_1) .events > meta[data-import~=location] ~ * ._location, html:not(#_1) .events > meta[data-import-all] ~ * ._location, html .page-footer, html:not(#_1) .resources p {
   font-size: 12px; }
 html:not(#_1):not(#_2) .button {
   padding: 10px;
@@ -123,89 +115,116 @@ html .page {
   min-width: 960px; }
 html .page-footer {
   padding: 20px; }
-  html .page-footer_left, html .page-footer > ._left, html .page-footer.__left ._left, html .page-footer.__ ._left {
+  html .page-footer_left, html .page-footer > ._left, html .page-footer > meta[data-use~=left] ~ * .left, html .page-footer > meta[data-import~=left] ~ * ._left, html .page-footer > meta[data-import-all] ~ * ._left {
     float: left;
     width: 50%;
     text-align: right;
     padding-right: 10px; }
-  html .page-footer_right, html .page-footer > ._right, html .page-footer.__right ._right, html .page-footer.__ ._right {
+  html .page-footer_right, html .page-footer > ._right, html .page-footer > meta[data-use~=right] ~ * .right, html .page-footer > meta[data-import~=right] ~ * ._right, html .page-footer > meta[data-import-all] ~ * ._right {
     float: right;
     width: 50%;
     text-align: left;
     padding-left: 10px; }
-  html .page-footer_about, html .page-footer > ._about, html .page-footer.__about ._about, html .page-footer.__ ._about {
+  html .page-footer_about, html .page-footer > ._about, html .page-footer > meta[data-use~=about] ~ * .about, html .page-footer > meta[data-import~=about] ~ * ._about, html .page-footer > meta[data-import-all] ~ * ._about {
     overflow: hidden;
     width: 640px;
     margin: 0 auto; }
-    html .page-footer_about p, html .page-footer > ._about p, html .page-footer.__about ._about p, html .page-footer.__ ._about p {
+    html .page-footer_about p, html .page-footer > ._about p, html .page-footer > meta[data-use~=about] ~ * .about p, html .page-footer > meta[data-import~=about] ~ * ._about p, html .page-footer > meta[data-import-all] ~ * ._about p {
       margin-bottom: 20px; }
-  html .page-footer_extra-information, html .page-footer > ._extra-information, html .page-footer.__extra-information ._extra-information, html .page-footer.__ ._extra-information {
+  html .page-footer_extra-information, html .page-footer > ._extra-information, html .page-footer > meta[data-use~=extra-information] ~ * .extra-information, html .page-footer > meta[data-import~=extra-information] ~ * ._extra-information, html .page-footer > meta[data-import-all] ~ * ._extra-information {
     text-align: center; }
 html .page-header {
-  position: fixed;
-  z-index: 1;
-  overflow: auto;
-  width: 100%;
+  zoom: 1;
   border-bottom: 1px solid #e6e6e6;
-  background: white; }
-  @media (max-width: 959px) {
-    html .page-header {
-      position: static; } }
-  html .page-header_logo, html .page-header > ._logo, html .page-header.__logo ._logo, html .page-header.__ ._logo {
+  padding: 50px 0;
+  background: url("/images/background.jpg") no-repeat center bottom;
+  background-size: cover; }
+  html .page-header:before {
+    content: "\0020";
     display: block;
-    float: left;
+    height: 0;
+    overflow: hidden; }
+  html .page-header:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
+  html .page-header_logo, html .page-header > ._logo, html .page-header > meta[data-use~=logo] ~ * .logo, html .page-header > meta[data-import~=logo] ~ * ._logo, html .page-header > meta[data-import-all] ~ * ._logo {
+    display: block;
     text-indent: -999999px;
-    width: 220px;
-    height: 60px;
+    height: 80px;
+    margin: 0 auto 20px;
     background: url("/images/logo.png") no-repeat center center;
-    background-size: 180px 29px; }
-  html .page-header_legend, html .page-header > ._legend, html .page-header.__legend ._legend, html .page-header.__ ._legend {
-    padding-left: 10px;
-    border-left: 1px solid #f3f3f3;
-    float: left; }
-    html .page-header_legend li, html .page-header > ._legend li, html .page-header.__legend ._legend li, html .page-header.__ ._legend li {
+    background-size: 480px; }
+  html .page-header_description, html .page-header > ._description, html .page-header > meta[data-use~=description] ~ * .description, html .page-header > meta[data-import~=description] ~ * ._description, html .page-header > meta[data-import-all] ~ * ._description {
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.5);
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333; }
+  html .page-header_social, html .page-header > ._social, html .page-header > meta[data-use~=social] ~ * .social, html .page-header > meta[data-import~=social] ~ * ._social, html .page-header > meta[data-import-all] ~ * ._social {
+    width: 180px;
+    margin: 0 auto; }
+    html .page-header_social li, html .page-header > ._social li, html .page-header > meta[data-use~=social] ~ * .social li, html .page-header > meta[data-import~=social] ~ * ._social li, html .page-header > meta[data-import-all] ~ * ._social li {
       float: left;
-      line-height: 60px; }
-  html .page-header_search input, html .page-header > ._search input, html .page-header.__search ._search input, html .page-header.__ ._search input {
-    height: 20px;
-    border: 1px solid #e6e6e6;
-    border-radius: 10px; }
-  html .page-header_social, html .page-header > ._social, html .page-header.__social ._social, html .page-header.__ ._social {
-    float: right; }
-    html .page-header_social li, html .page-header > ._social li, html .page-header.__social ._social li, html .page-header.__ ._social li {
-      float: left; }
-    html .page-header_social a, html .page-header > ._social a, html .page-header.__social ._social a, html .page-header.__ ._social a {
+      width: 60px; }
+    html .page-header_social a, html .page-header > ._social a, html .page-header > meta[data-use~=social] ~ * .social a, html .page-header > meta[data-import~=social] ~ * ._social a, html .page-header > meta[data-import-all] ~ * ._social a {
       display: block;
       padding: 0 20px; }
-    html .page-header_social i, html .page-header > ._social i, html .page-header.__social ._social i, html .page-header.__ ._social i {
+    html .page-header_social i, html .page-header > ._social i, html .page-header > meta[data-use~=social] ~ * .social i, html .page-header > meta[data-import~=social] ~ * ._social i, html .page-header > meta[data-import-all] ~ * ._social i {
       line-height: 60px; }
 html .page-main {
+  zoom: 1;
   background: white;
-  border-bottom: 1px solid #e6e6e6;
-  padding-top: 61px; }
-  @media (max-width: 959px) {
-    html .page-main {
-      padding-top: 0; } }
+  border-bottom: 1px solid #e6e6e6; }
+  html .page-main:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  html .page-main:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
 html:not(#_1) .resources {
+  zoom: 1;
   float: left;
   width: 50%;
   padding: 20px 20px 20px 10px; }
+  html:not(#_1) .resources:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  html:not(#_1) .resources:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
+  html:not(#_1) .resources h2 {
+    margin-bottom: 10px; }
   html:not(#_1) .resources ul {
     margin-bottom: 20px; }
   html:not(#_1) .resources li {
+    margin-bottom: 10px; }
+  html:not(#_1) .resources a {
+    display: block;
     text-indent: -20px;
     padding-left: 20px; }
-  html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources.__header ._header, html:not(#_1) .resources.__ ._header {
+  html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources > meta[data-use~=header] ~ * .header, html:not(#_1) .resources > meta[data-import~=header] ~ * ._header, html:not(#_1) .resources > meta[data-import-all] ~ * ._header {
     padding: 10px;
     border-bottom: 2px solid #e6e6e6;
     margin-bottom: 10px; }
-  html:not(#_1) .resources_legend, html:not(#_1) .resources > ._legend, html:not(#_1) .resources.__legend ._legend, html:not(#_1) .resources.__ ._legend {
+  html:not(#_1) .resources_legend, html:not(#_1) .resources > ._legend, html:not(#_1) .resources > meta[data-use~=legend] ~ * .legend, html:not(#_1) .resources > meta[data-import~=legend] ~ * ._legend, html:not(#_1) .resources > meta[data-import-all] ~ * ._legend {
     float: right; }
-  html:not(#_1) .resources_left, html:not(#_1) .resources > ._left, html:not(#_1) .resources.__left ._left, html:not(#_1) .resources.__ ._left {
+  html:not(#_1) .resources_left, html:not(#_1) .resources > ._left, html:not(#_1) .resources > meta[data-use~=left] ~ * .left, html:not(#_1) .resources > meta[data-import~=left] ~ * ._left, html:not(#_1) .resources > meta[data-import-all] ~ * ._left {
     float: left;
     width: 50%;
     padding: 0 10px; }
-  html:not(#_1) .resources_right, html:not(#_1) .resources > ._right, html:not(#_1) .resources.__right ._right, html:not(#_1) .resources.__ ._right {
+  html:not(#_1) .resources_right, html:not(#_1) .resources > ._right, html:not(#_1) .resources > meta[data-use~=right] ~ * .right, html:not(#_1) .resources > meta[data-import~=right] ~ * ._right, html:not(#_1) .resources > meta[data-import-all] ~ * ._right {
     float: left;
     width: 50%;
     padding: 0 10px; }

@@ -1,0 +1,43 @@
+$breakpoints: ();
+
+@mixin def-breakpoint($name, $queries...) {
+    $queries: list($queries);
+    $breakpoints: map-merge($breakpoints, ($name: $queries)) !global;
+}
+
+@mixin breakpoint($args...) {
+    $args: list($args);
+    $or-clauses: ();
+
+    @each $arg in list($args) {
+        $clauses: append(list(), list());
+
+        @each $name in list($arg) {
+            $new-clauses: list();
+            $queries: map-get($breakpoints, $name);
+
+            @if $queries {
+                @each $query in $queries {
+                    @each $clause in $clauses {
+                        $new-clause: append($clause, $query);
+                        $new-clauses: append($new-clauses, $new-clause);
+                    }
+                }
+            } @else {
+                @include error("Unknown breakpoint #{quote($name)}.");
+            }
+
+            $clauses: $new-clauses;
+        }
+
+        @each $and-clause in $clauses {
+            $or-clauses: append($or-clauses, concat($and-clause, " and "));
+        }
+    }
+
+    @if $or-clauses != () {
+        @media #{concat($or-clauses, ", ")} {
+            @content;
+        }
+    }
+}

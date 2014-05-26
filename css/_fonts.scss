@@ -18,14 +18,22 @@
     }
 }
 
-@include def-font(gray-link) {
-    @include font(gray);
+@include def-font(white-link) {
+    @include font(white);
 
     &:hover, &:focus {
-        @include font(dark-gray);
+        @include font(gray);
     }
+}
+
+@include def-font(large) {
+    font-size: 18px;
 }
 
 @include def-font(small) {
     font-size: 12px;
+}
+
+@include def-font(light) {
+    font-weight: 200;
 }

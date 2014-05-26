@@ -1,21 +1,42 @@
 $module-class-selector-enabled: true !default;
 $module-child-selector-enabled: true !default;
+$module-use-selector-enabled: true !default;
 $module-import-selector-enabled: true !default;
 $module-import-all-selector-enabled: true !default;
 
 $modules: ();
-$current-module: ();
+$current-module: "";
+
+@function module-segments($module) {
+    $segments: ();
+
+    $segment: "";
+    @for $i from 1 through str-length($module) {
+        $char: str-slice($module, $i, $i);
+        @if $char == _ {
+            $segments: append($segments, $segment);
+            $segment: "";
+        } @else {
+            $segment: $segment + $char;
+        }
+    }
+
+    $segments: append($segments, $segment);
+    @return $segments;
+}
 
 @function module-selectors($module) {
-    $module-depth: length($module);
+    $segments: module-segments($module);
+    $module-depth: length($segments);
     @if $module-depth == 0 {
         @return ();
     } @else {
-        $selectors: list(".#{head($module)}");
+        $root-segment: head($segments);
+        $selectors: list(".#{$root-segment}");
 
         $i: 2;
         @while $i <= $module-depth {
-            $segment: nth($module, $i);
+            $segment: nth($segments, $i);
             $new-selectors: ();
 
             @each $parent in $selectors {
@@ -29,13 +50,18 @@ $current-module: ();
                     $new-selectors: append($new-selectors, $child-selector);
                 }
 
+                @if $module-use-selector-enabled {
+                    $use-selector: "#{$parent} > meta[data-use~=#{$segment}] ~ * .#{$segment}";
+                    $new-selectors: append($new-selectors, $use-selector);
+                }
+
                 @if $module-import-selector-enabled {
-                    $import-selector: "#{$parent}.__#{$segment} ._#{$segment}";
+                    $import-selector: "#{$parent} > meta[data-import~=#{$segment}] ~ * ._#{$segment}";
                     $new-selectors: append($new-selectors, $import-selector);
                 }
 
                 @if $module-import-all-selector-enabled {
-                    $import-all-selector: "#{$parent}.__ ._#{$segment}";
+                    $import-all-selector: "#{$parent} > meta[data-import-all] ~ * ._#{$segment}";
                     $new-selectors: append($new-selectors, $import-all-selector);
                 }
             }
@@ -48,12 +74,16 @@ $current-module: ();
     }
 }
 
-@mixin def-module($name...) {
-	$name: list($name);
-
+@mixin def-module($segment) {
 	$parent-module: $current-module;
-	$current-module: join($current-module, $name) !global;
-	$modules: tree-add($modules, $current-module) !global;
+
+	@if $current-module == "" {
+        $current-module: $segment !global;
+    } @else {
+        $current-module: "#{$current-module}_#{$segment}" !global;
+    }
+
+	$modules: tree-add($modules, module-segments($current-module)) !global;
 
 	@include def-resource(module, without-selectors, $current-module) {
 		@content;
@@ -70,26 +100,22 @@ $current-module: ();
 	$current-module: $parent-module !global;
 }
 
-@mixin module($name...) {
-	@include resource(module, with-selectors, list($name));
+@mixin module($module, $inline: false, $submodules: true) {
+    @if $inline {
+        @include resource(module, without-selectors, $module);
+    } @else {
+        @include resource(module, with-selectors, $module);
+    }
+
+    @if $submodules {
+        @each $segment, $_ in tree-get($modules, module-segments($module), ()) {
+            @include module("#{$module}_#{$segment}");
+        }
+    }
 }
 
-@mixin module-inline($name...) {
-	@include resource(module, without-selectors, list($name));
-}
-
-@mixin module-tree($name...) {
-	@if $name != () {
-		$name: list($name);
-		@include resource(module, with-selectors, $name);
-
-		$temp-modules: $modules;
-		@each $segment in $name {
-			$temp-modules: map-get($temp-modules, $segment)
-		}
-
-		@each $segment, $_ in $temp-modules {
-			@include module-tree(append($name, $segment)...);
-		}
-	}
+@mixin modules($modules...) {
+    @each $module in list($modules) {
+        @include module($module);
+    }
 }

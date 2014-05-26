@@ -1,3 +1,11 @@
+$reset-box-sizing-enabled: true !default;
+$reset-general-enabled: true !default;
+$reset-lists-enabled: true !default;
+$reset-tables-enabled: true !default;
+$reset-links-enabled: true !default;
+$reset-html5-enabled: true !default;
+$reset-meta-enabled: true !default;
+
 @mixin reset-box-model {
 	margin: 0;
 	padding: 0;
@@ -5,60 +13,79 @@
 	outline: 0;
 }
 
-@mixin reset {
-	* {
-		box-sizing: border-box;
-	}
+@mixin reset($box-sizing: $reset-box-sizing-enabled,
+             $general: $reset-general-enabled,
+             $lists: $reset-lists-enabled,
+             $tables: $reset-tables-enabled,
+             $links: $reset-links-enabled,
+             $html5: $reset-html5-enabled,
+             $meta: $reset-meta-enabled) {
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-		@include reset-box-model;
-		font-weight: inherit;
-		font-style: inherit;
-		font-family: inherit;
-		font-size: 100%;
-		vertical-align: baseline;
-	}
+    @if $box-sizing {
+        * { box-sizing: border-box; }
+    }
 
-	body {
-		// line-height: 1;
-		color: black;
-		background: white;
-	}
+    @if $general {
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+        p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
+        dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+        tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+        caption, tbody, tfoot, thead, tr, th, td {
+            @include reset-box-model;
+            font-weight: inherit;
+            font-style: inherit;
+            font-family: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+    }
 
-	ol, ul {
-		list-style: none;
-	}
+    @if $lists {
+        ol, ul { list-style: none; }
+    }
 
-	table {
-		border-collapse: separate;
-		border-spacing: 0;
-		vertical-align: middle;
-	}
+    @if $tables {
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            vertical-align: middle;
+        }
 
-	caption, th, td {
-		text-align: left;
-		font-weight: normal;
-		vertical-align: middle;
-	}
+        caption, th, td {
+            text-align: left;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+    }
 
-	a {
-		color: inherit;
-		text-decoration: inherit;
+    @if $links {
+        a {
+            color: inherit;
+            text-decoration: inherit;
 
-		img {
-			border: none;
-		}
-	}
+            img { border: none; }
+        }
+    }
 
-	article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, main {
-		@include reset-box-model;
-		display: block;
-	}
-	audio, canvas, video {
-		display: inline-block;
-	}
+    @if $html5 {
+        article, aside, canvas, details, figcaption, figure, footer, header,
+        hgroup, menu, nav, section, summary, main {
+            @include reset-box-model;
+            display: block;
+        }
 
-	audio:not([controls]),[hidden] {
-		display: none;
-	}
+        audio, canvas, video {
+            display: inline-block;
+        }
+
+        audio:not([controls]), [hidden] {
+            display: none;
+        }
+    }
+
+    // Never display meta tags. This is especially important for the module
+    // system to work properly.
+    @if $meta {
+        meta { display: none !important; }
+    }
 }

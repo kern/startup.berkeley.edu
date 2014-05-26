@@ -9,21 +9,21 @@
 				$items: append($items, debug($item));
 			}
 
-			$results: append($results, "[#{list-concat($items, ", ")}]");
+			$results: append($results, "[#{concat($items, ", ")}]");
 		} @else if $type == arglist {
 			$items: ();
 			@each $item in $value {
 				$items: append($items, debug($item));
 			}
 
-			$results: append($results, "%[#{list-concat($items, ", ")}]");
+			$results: append($results, "%[#{concat($items, ", ")}]");
 		} @else if $type == map {
 			$pairs: ();
 			@each $k, $v in $value {
 				$pairs: append($pairs, "#{debug($k)}: #{debug($v)}");
 			}
 
-			$results: append($results, "{#{list-concat($pairs, ", ")}}");
+			$results: append($results, "{#{concat($pairs, ", ")}}");
 		} @else if $type == string {
 			$results: append($results, "\"#{unquote($value)}\"");
 		} @else {
@@ -31,5 +31,5 @@
 		}
 	}
 
-	@return list-concat($results, " ");
+	@return concat($results, " ");
 }

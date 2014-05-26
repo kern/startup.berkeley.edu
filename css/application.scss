@@ -1,8 +1,7 @@
+@import "config";
 @import "../bower_components/octave/octave";
 
-@import "colors";
 @import "fonts";
-
 @import "modules/button";
 @import "modules/events";
 @import "modules/page";
@@ -13,18 +12,14 @@
 @import "modules/root";
 
 html {
-	@include module-inline(root);
-	@include module-tree(page);
-	@include module-tree(page-footer);
-	@include module-tree(page-header);
-	@include module-tree(page-main);
+	@include module(root, $inline: true);
+	@include modules(page, page-footer, page-header, page-main);
 
 	@include priority(1) {
-		@include module-tree(events);
-		@include module-tree(resources);
+		@include modules(events, resources);
 	}
 
 	@include priority(2) {
-		@include module-tree(button);
+		@include modules(button);
 	}
 }

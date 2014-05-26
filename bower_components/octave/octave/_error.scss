@@ -1,0 +1,7 @@
+@function error($message) {
+    @warn $message;
+}
+
+@mixin error($message) {
+    $_: error($message);
+}
