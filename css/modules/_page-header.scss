@@ -17,9 +17,9 @@
     @include def-module(description) {
         @include font(center large white italic);
         padding: 20px;
-        background: transparentize($black, 0.25);
-        border-top: 1px solid $black;
-        border-bottom: 1px solid $black;
+        background: transparentize($dark-blue, 0.25);
+        border-top: 1px solid $dark-blue;
+        border-bottom: 1px solid $dark-blue;
     }
 
     @include def-module(social) {
