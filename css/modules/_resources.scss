@@ -1,12 +1,21 @@
 @include def-module(resources) {
 	@include clearfix;
-	float: left;
-	width: 50%;
-	padding: 20px 20px 20px 10px;
+
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 20px;
+
+	// Uncomment to align right.
+	// float: right;
+	// width: 50%;
+	// padding: 20px 20px 20px 10px;
 
 	h2 {
-		@include font(default bold);
-		margin-bottom: 10px;
+		@include font(bold);
+	}
+
+	h3 {
+		@include font(small italic dark-gray);
 	}
 
 	ul {
@@ -14,29 +23,8 @@
 	}
 
 	li {
-		margin-bottom: 10px;
+		margin: 10px 0;
 	}
-
-	a {
-	    display: block;
-	    text-indent: -20px;
-	    padding-left: 20px;
-    }
-
-	p {
-	    @include font(small dark-gray);
-    }
-
-	@include def-module(header) {
-		@include font(default bold);
-		padding: 10px;
-		border-bottom: 2px solid $gray;
-		margin-bottom: 10px;
-	}
-
-	@include def-module(legend) {
-	    float: right;
-    }
 
 	@include def-module(left) {
 		float: left;
@@ -49,4 +37,25 @@
 		width: 50%;
 		padding: 0 10px;
 	}
+
+	@include def-module(header) {
+		@include font(bold);
+		padding: 10px;
+		border-bottom: 2px solid $gray;
+		margin-bottom: 10px;
+	}
+
+    @include def-module(note) {
+        @include font(small dark-gray italic);
+    }
+
+	@include def-module(name) {
+	    display: block;
+	    text-indent: -20px;
+	    padding-left: 20px;
+    }
+
+	@include def-module(description) {
+	    @include font(small dark-gray);
+    }
 }

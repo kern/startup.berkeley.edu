@@ -15,8 +15,16 @@
     text-transform: none;
 }
 
+@include def-font(normal-weight) {
+    font-weight: normal;
+}
+
 @include def-font(bold) {
     font-weight: bold;
+}
+
+@include def-font(normal-style) {
+    font-weight: normal;
 }
 
 @include def-font(italic) {

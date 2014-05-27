@@ -1,8 +1,9 @@
 $module-class-selector-enabled: true !default;
 $module-child-selector-enabled: true !default;
-$module-use-selector-enabled: true !default;
-$module-import-selector-enabled: true !default;
-$module-import-all-selector-enabled: true !default;
+$module-parent-include-selector-enabled: true !default;
+$module-parent-include-all-selector-enabled: true !default;
+$module-sibling-include-selector-enabled: true !default;
+$module-sibling-include-all-selector-enabled: true !default;
 
 $modules: ();
 $current-module: "";
@@ -50,19 +51,24 @@ $current-module: "";
                     $new-selectors: append($new-selectors, $child-selector);
                 }
 
-                @if $module-use-selector-enabled {
-                    $use-selector: "#{$parent} > meta.#{$segment} ~ * .#{$segment}";
-                    $new-selectors: append($new-selectors, $use-selector);
+                @if $module-parent-include-selector-enabled {
+                    $parent-include-selector: "#{$parent}[data-octave~=_#{$segment}] ._#{$segment}";
+                    $new-selectors: append($new-selectors, $parent-include-selector);
                 }
 
-                @if $module-import-selector-enabled {
-                    $import-selector: "#{$parent} > meta._#{$segment} ~ * ._#{$segment}";
-                    $new-selectors: append($new-selectors, $import-selector);
+                @if $module-parent-include-all-selector-enabled {
+                    $parent-include-all-selector: "#{$parent}[data-octave~=_] ._#{$segment}";
+                    $new-selectors: append($new-selectors, $parent-include-all-selector);
                 }
 
-                @if $module-import-all-selector-enabled {
-                    $import-all-selector: "#{$parent} > meta._ ~ * ._#{$segment}";
-                    $new-selectors: append($new-selectors, $import-all-selector);
+                @if $module-sibling-include-selector-enabled {
+                    $sibling-include-selector: "#{$parent} > meta[data-octave~=_#{$segment}] ~ * ._#{$segment}";
+                    $new-selectors: append($new-selectors, $sibling-include-selector);
+                }
+
+                @if $module-sibling-include-all-selector-enabled {
+                    $sibling-include-all-selector: "#{$parent} > meta[data-octave~=_] ~ * ._#{$segment}";
+                    $new-selectors: append($new-selectors, $sibling-include-all-selector);
                 }
             }
 
