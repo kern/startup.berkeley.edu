@@ -1,14 +1,13 @@
 @include def-module(events) {
 	@include font(events);
 
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 20px;
+	// margin: 0 auto;
+	// max-width: 960px;
+	// padding: 20px;
 
-	// Uncomment to align left.
-	// float: left;
-	// width: 50%;
-	// padding: 20px 10px 20px 20px;
+	float: left;
+	width: 50%;
+	padding: 20px 10px 20px 20px;
 
 	table {
 		width: 100%;
