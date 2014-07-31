@@ -94,9 +94,9 @@ html:not(#_1):not(#_2) .button {
   html:not(#_1):not(#_2) .button:hover, html:not(#_1):not(#_2) .button:focus {
     background: #d7bd27; }
 html:not(#_1) .events {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 20px; }
+  float: left;
+  width: 50%;
+  padding: 20px 10px 20px 20px; }
   html:not(#_1) .events table {
     width: 100%; }
   html:not(#_1) .events th {
@@ -194,9 +194,9 @@ html .page-main {
     text-align: center; }
 html:not(#_1) .resources {
   zoom: 1;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 20px; }
+  float: right;
+  width: 50%;
+  padding: 20px 20px 20px 10px; }
   html:not(#_1) .resources:before {
     content: "\0020";
     display: block;
