@@ -191,7 +191,8 @@ html .page-main {
   html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action {
     padding: 20px 0;
     line-height: 60px;
-    text-align: center; }
+    text-align: center;
+    clear: both; }
 html:not(#_1) .resources {
   zoom: 1;
   float: right;
