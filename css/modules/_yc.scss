@@ -1,0 +1,25 @@
+@include def-module(yc) {
+	@include clearfix;
+
+	float: right;
+	width: 50%;
+	padding: 20px 20px 0 10px;
+
+	@include def-module(header) {
+		@include font(bold);
+		padding: 10px;
+		border-bottom: 2px solid $gray;
+		margin-bottom: 10px;
+	}
+
+	@include def-module(logo) {
+	    width: 16px;
+	    height: 16px;
+	    vertical-align: middle;
+    }
+
+    p {
+	    @include font(small dark-gray);
+	    margin: 10px;
+    }
+}

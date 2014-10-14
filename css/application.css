@@ -64,7 +64,7 @@ html {
   text-transform: none; }
 html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources[data-octave~=_header] ._header, html:not(#_1) .resources[data-octave~=_] ._header, html:not(#_1) .resources > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._header, html strong,
 html h1, html h2, html h3, html h4, html h5, html h6,
-html th {
+html th, html:not(#_1) .yc_header, html:not(#_1) .yc > ._header, html:not(#_1) .yc[data-octave~=_header] ._header, html:not(#_1) .yc[data-octave~=_] ._header, html:not(#_1) .yc > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._header {
   font-weight: bold; }
 html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events[data-octave~=_location] ._location, html:not(#_1) .events[data-octave~=_] ._location, html:not(#_1) .events > meta[data-octave~=_location] ~ * ._location, html:not(#_1) .events > meta[data-octave~=_] ~ * ._location, html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html em {
   font-style: italic; }
@@ -75,7 +75,7 @@ html {
   color: #173c4e; }
 html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer[data-octave~=_blue] ._blue, html .page-footer[data-octave~=_] ._blue, html .page-footer > meta[data-octave~=_blue] ~ * ._blue, html .page-footer > meta[data-octave~=_] ~ * ._blue {
   color: #416b80; }
-html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events[data-octave~=_description] ._description, html:not(#_1) .events[data-octave~=_] ._description, html:not(#_1) .events > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .events > meta[data-octave~=_] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events[data-octave~=_location] ._location, html:not(#_1) .events[data-octave~=_] ._location, html:not(#_1) .events > meta[data-octave~=_location] ~ * ._location, html:not(#_1) .events > meta[data-octave~=_] ~ * ._location, html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description {
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events[data-octave~=_description] ._description, html:not(#_1) .events[data-octave~=_] ._description, html:not(#_1) .events > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .events > meta[data-octave~=_] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events[data-octave~=_location] ._location, html:not(#_1) .events[data-octave~=_] ._location, html:not(#_1) .events > meta[data-octave~=_location] ~ * ._location, html:not(#_1) .events > meta[data-octave~=_] ~ * ._location, html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description, html:not(#_1) .yc p {
   color: #777777; }
 html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header[data-octave~=_social] ._social a:hover, html .page-header[data-octave~=_] ._social a:hover, html .page-header > meta[data-octave~=_social] ~ * ._social a:hover, html .page-header > meta[data-octave~=_] ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header[data-octave~=_social] ._social a:focus, html .page-header[data-octave~=_] ._social a:focus, html .page-header > meta[data-octave~=_social] ~ * ._social a:focus, html .page-header > meta[data-octave~=_] ~ * ._social a:focus {
   color: #e6e6e6; }
@@ -85,7 +85,7 @@ html a:hover, html a:focus, html .page-footer_yellow, html .page-footer > ._yell
   color: #d7bd27; }
 html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description {
   font-size: 18px; }
-html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events[data-octave~=_description] ._description, html:not(#_1) .events[data-octave~=_] ._description, html:not(#_1) .events > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .events > meta[data-octave~=_] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events[data-octave~=_location] ._location, html:not(#_1) .events[data-octave~=_] ._location, html:not(#_1) .events > meta[data-octave~=_location] ~ * ._location, html:not(#_1) .events > meta[data-octave~=_] ~ * ._location, html .page-footer, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description {
+html:not(#_1) .events_description, html:not(#_1) .events > ._description, html:not(#_1) .events[data-octave~=_description] ._description, html:not(#_1) .events[data-octave~=_] ._description, html:not(#_1) .events > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .events > meta[data-octave~=_] ~ * ._description, html:not(#_1) .events_location, html:not(#_1) .events > ._location, html:not(#_1) .events[data-octave~=_location] ._location, html:not(#_1) .events[data-octave~=_] ._location, html:not(#_1) .events > meta[data-octave~=_location] ~ * ._location, html:not(#_1) .events > meta[data-octave~=_] ~ * ._location, html .page-footer, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description, html:not(#_1) .yc p {
   font-size: 12px; }
 html:not(#_1):not(#_2) .button {
   padding: 10px;
@@ -229,3 +229,29 @@ html:not(#_1) .resources {
     display: block;
     text-indent: -20px;
     padding-left: 20px; }
+html:not(#_1) .yc {
+  zoom: 1;
+  float: right;
+  width: 50%;
+  padding: 20px 20px 0 10px; }
+  html:not(#_1) .yc:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  html:not(#_1) .yc:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
+  html:not(#_1) .yc_header, html:not(#_1) .yc > ._header, html:not(#_1) .yc[data-octave~=_header] ._header, html:not(#_1) .yc[data-octave~=_] ._header, html:not(#_1) .yc > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._header {
+    padding: 10px;
+    border-bottom: 2px solid #e6e6e6;
+    margin-bottom: 10px; }
+  html:not(#_1) .yc_logo, html:not(#_1) .yc > ._logo, html:not(#_1) .yc[data-octave~=_logo] ._logo, html:not(#_1) .yc[data-octave~=_] ._logo, html:not(#_1) .yc > meta[data-octave~=_logo] ~ * ._logo, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._logo {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle; }
+  html:not(#_1) .yc p {
+    margin: 10px; }

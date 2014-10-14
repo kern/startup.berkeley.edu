@@ -10,13 +10,14 @@
 @import "modules/page-main";
 @import "modules/resources";
 @import "modules/root";
+@import "modules/yc";
 
 html {
 	@include module(root, $inline: true);
 	@include modules(page, page-footer, page-header, page-main);
 
 	@include priority(1) {
-		@include modules(events, resources);
+		@include modules(events, yc, resources);
 	}
 
 	@include priority(2) {
