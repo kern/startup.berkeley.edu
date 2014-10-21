@@ -1,30 +1,58 @@
+@mixin linear-gradient($fromColor, $toColor) {
+    background-color: $toColor; /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+    background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, $fromColor, $toColor);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
 @include def-module(page-header) {
     @include clearfix;
-    border-bottom: 1px solid $gray;
-    padding: 50px 0;
-    background: url("/images/background.jpg") no-repeat center bottom;
-    background-size: cover;
+    @include linear-gradient(lighten($blue, 5%), $blue);
+    border-bottom: 2px solid darken($blue, 5%);
+    position: fixed;
+    width: 100%;
+
+    @media (max-width: 960px) {
+        position: static;
+    }
 
     @include def-module(logo) {
         display: block;
         text-indent: -999999px;
-        height: 80px;
-        margin: 0 auto 20px;
-        background: url("/images/logo.png") no-repeat center center;
-        background-size: 480px;
+        width: 200px;
+        height: 32px;
+        margin: 14px 20px;
+        float: left;
+        background: url("/images/logo.png") no-repeat center left;
+        background-size: 198px 32px;
+
+        @media (max-width: 960px) {
+            float: none;
+            margin: 14px 0;
+            width: 100%;
+            background-position: center center;
+        }
     }
 
     @include def-module(description) {
-        @include font(center large white italic);
-        padding: 20px;
-        background: transparentize($dark-blue, 0.25);
-        border-top: 1px solid $dark-blue;
-        border-bottom: 1px solid $dark-blue;
+        @include font(white italic);
+        padding: 14px;
+        float: left;
+        line-height: 32px;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
     }
 
     @include def-module(social) {
+        margin: 14px;
         width: 180px;
-        margin: 0 auto;
+        float: right;
 
         li {
             float: left;
@@ -38,7 +66,11 @@
         }
 
         i {
-            line-height: 60px;
+            line-height: 32px;
+        }
+
+        @media (max-width: 960px) {
+            display: none;
         }
     }
 }

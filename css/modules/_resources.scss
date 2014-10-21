@@ -1,13 +1,6 @@
 @include def-module(resources) {
 	@include clearfix;
-
-	// margin: 0 auto;
-	// max-width: 960px;
-	// padding: 20px;
-
-	float: right;
-	width: 50%;
-	padding: 20px 20px 20px 10px;
+	padding: 0 20px 20px 20px;
 
 	h2 {
 		@include font(bold);
@@ -52,6 +45,11 @@
 	    display: block;
 	    text-indent: -20px;
 	    padding-left: 20px;
+
+	    @media (max-width: 960px) {
+	        text-indent: 0;
+	        padding-left: 0;
+        }
     }
 
 	@include def-module(description) {

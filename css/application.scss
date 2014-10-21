@@ -11,13 +11,14 @@
 @import "modules/resources";
 @import "modules/root";
 @import "modules/yc";
+@import "modules/livefeed";
 
 html {
 	@include module(root, $inline: true);
 	@include modules(page, page-footer, page-header, page-main);
 
 	@include priority(1) {
-		@include modules(events, yc, resources);
+		@include modules(events, yc, resources, livefeed);
 	}
 
 	@include priority(2) {

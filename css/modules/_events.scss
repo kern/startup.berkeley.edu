@@ -1,42 +1,19 @@
 @include def-module(events) {
 	@include font(events);
+	padding: 0 20px 20px 20px;
 
-	// margin: 0 auto;
-	// max-width: 960px;
-	// padding: 20px;
+    iframe {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: 640px;
+        max-height: 60vh;
+    }
 
-	float: left;
-	width: 50%;
-	padding: 20px 10px 20px 20px;
-
-	table {
-		width: 100%;
-	}
-
-	th {
+	@include def-module(header) {
+		@include font(bold);
 		padding: 10px;
-		border-bottom: 1px solid $gray;
-	}
-
-	td {
-		vertical-align: top;
-		border-top: 1px solid $gray;
-		padding: 10px;
-	}
-
-	thead {
-		border-bottom: 1px solid $light-gray;
-	}
-
-	tbody tr:nth-child(even) {
-		background: $light-gray;
-	}
-
-	@include def-module(description) {
-		@include font(small dark-gray);
-	}
-
-	@include def-module(location) {
-		@include font(small dark-gray italic);
+		border-bottom: 2px solid $gray;
+		margin-bottom: 10px;
 	}
 }

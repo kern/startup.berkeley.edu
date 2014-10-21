@@ -1,0 +1,18 @@
+@include def-module(livefeed) {
+    @include clearfix;
+    padding: 0 20px 20px 20px;
+
+    iframe {
+        display: block !important;
+        width: 100% !important;
+        height: 650px !important;
+        max-height: calc(60vh + 10px) !important;
+    }
+
+	@include def-module(header) {
+		@include font(bold);
+		padding: 10px;
+		border-bottom: 2px solid $gray;
+		margin-bottom: 0;
+	}
+}

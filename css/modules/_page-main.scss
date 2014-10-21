@@ -2,6 +2,32 @@
     @include clearfix;
     background: $white;
     border-bottom: 1px solid $gray;
+    padding-top: 72px;
+    width: 100%;
+
+    @media (max-width: 960px) {
+        padding-top: 10px;
+    }
+
+    @include def-module(left) {
+        float: left;
+        width: 50%;
+
+        @media (max-width: 960px) {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    @include def-module(right) {
+        float: right;
+        width: 50%;
+
+        @media (max-width: 960px) {
+            float: none;
+            width: 100%;
+        }
+    }
 
     @include def-module(call-to-action) {
         @include font(dark-gray);
@@ -9,5 +35,9 @@
         line-height: 60px;
         text-align: center;
         clear: both;
+
+        @media (max-width: 960px) {
+            display: none;
+        }
     }
 }
