@@ -15,4 +15,9 @@
 		border-bottom: 2px solid $gray;
 		margin-bottom: 0;
 	}
+
+	@include def-module(embed) {
+	    overflow: auto;
+	    -webkit-overflow-scrolling: touch;
+    }
 }

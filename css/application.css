@@ -103,6 +103,9 @@ html:not(#_1) .events {
     padding: 10px;
     border-bottom: 2px solid #e6e6e6;
     margin-bottom: 10px; }
+  html:not(#_1) .events_embed, html:not(#_1) .events > ._embed, html:not(#_1) .events[data-octave~=_embed] ._embed, html:not(#_1) .events[data-octave~=_] ._embed, html:not(#_1) .events > meta[data-octave~=_embed] ~ * ._embed, html:not(#_1) .events > meta[data-octave~=_] ~ * ._embed {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
 html .page {
   background: #f3f3f3; }
 html .page-footer {
@@ -170,9 +173,10 @@ html .page-header {
     @media (max-width: 960px) {
       html .page-header_logo, html .page-header > ._logo, html .page-header[data-octave~=_logo] ._logo, html .page-header[data-octave~=_] ._logo, html .page-header > meta[data-octave~=_logo] ~ * ._logo, html .page-header > meta[data-octave~=_] ~ * ._logo {
         float: none;
-        margin: 14px 0;
+        margin: 0;
         width: 100%;
-        background-position: center center; } }
+        background-position: center center;
+        height: 50px; } }
   html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description {
     padding: 14px;
     float: left;
@@ -322,3 +326,6 @@ html:not(#_1) .livefeed {
     padding: 10px;
     border-bottom: 2px solid #e6e6e6;
     margin-bottom: 0; }
+  html:not(#_1) .livefeed_embed, html:not(#_1) .livefeed > ._embed, html:not(#_1) .livefeed[data-octave~=_embed] ._embed, html:not(#_1) .livefeed[data-octave~=_] ._embed, html:not(#_1) .livefeed > meta[data-octave~=_embed] ~ * ._embed, html:not(#_1) .livefeed > meta[data-octave~=_] ~ * ._embed {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
