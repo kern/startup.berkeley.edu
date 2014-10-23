@@ -243,6 +243,7 @@ html .page-main {
         display: none; } }
 html:not(#_1) .resources {
   zoom: 1;
+  clear: both;
   padding: 0 20px 20px 20px; }
   html:not(#_1) .resources:before {
     content: "\0020";
@@ -281,7 +282,7 @@ html:not(#_1) .resources {
         padding-left: 0; } }
 html:not(#_1) .yc {
   zoom: 1;
-  padding: 0 20px 20px 20px; }
+  padding: 20px 20px 0 20px; }
   html:not(#_1) .yc:before {
     content: "\0020";
     display: block;

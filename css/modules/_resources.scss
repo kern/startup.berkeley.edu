@@ -1,5 +1,6 @@
 @include def-module(resources) {
 	@include clearfix;
+	clear: both;
 	padding: 0 20px 20px 20px;
 
 	h2 {
