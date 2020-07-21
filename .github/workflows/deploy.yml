@@ -1,0 +1,13 @@
+name: On Push (main)
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: [Linux]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Rsync to OCF server
+        run: |
+          rsync
