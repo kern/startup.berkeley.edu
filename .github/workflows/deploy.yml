@@ -20,4 +20,4 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          rsync
+          rsync -avz . startup@ssh.ocf.berkeley.edu:public_html
