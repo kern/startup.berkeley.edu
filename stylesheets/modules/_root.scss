@@ -1,0 +1,15 @@
+@include def-module(root) {
+	@include font(default);
+
+	strong {
+		@include font(default, bold);
+	}
+
+	em {
+		@include font(default, italic);
+	}
+
+	a {
+		@include font(default, a);
+	}
+}

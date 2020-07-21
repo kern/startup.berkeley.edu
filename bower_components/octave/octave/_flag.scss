@@ -1,5 +1,0 @@
-@mixin def-flag($name) {
-    &.-#{$name} {
-        @content;
-    }
-}

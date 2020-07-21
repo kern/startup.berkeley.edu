@@ -1,7 +1,0 @@
-exclude:
-    - bower_components
-    - Gemfile
-    - Gemfile.lock
-    - Rakefile
-    - README.md
-    - "*.scss"

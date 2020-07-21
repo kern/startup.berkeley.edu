@@ -1,0 +1,38 @@
+@include def-module(events) {
+	@include font(events);
+	float: left;
+	width: 50%;
+	padding: 20px 10px 20px 20px;
+
+	table {
+		width: 100%;
+	}
+
+	th {
+		@include font(events, header);
+		padding: 10px;
+		border-bottom: 1px solid $gray;
+	}
+
+	td {
+		vertical-align: top;
+		border-top: 1px solid $gray;
+		padding: 10px;
+	}
+
+	thead {
+		border-bottom: 1px solid $light-gray;
+	}
+
+	tbody tr:nth-child(even) {
+		background: $light-gray;
+	}
+
+	@include def-module(description) {
+		@include font(events, description);
+	}
+
+	@include def-module(location) {
+		@include font(events, location);
+	}
+}
