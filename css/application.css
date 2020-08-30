@@ -1,167 +1,237 @@
 * {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+}
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
-dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
-tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
-caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 
 ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
+    list-style: none;
+}
 
 a {
-  color: inherit;
-  text-decoration: inherit; }
-  a img {
-    border: none; }
+    color: inherit;
+    text-decoration: inherit;
+}
 
-article, aside, canvas, details, figcaption, figure, footer, header,
-hgroup, menu, nav, section, summary, main {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  display: block; }
+a img {
+    border: none;
+}
 
-audio, canvas, video {
-  display: inline-block; }
-
-audio:not([controls]), [hidden] {
-  display: none; }
-
-meta {
-  display: none !important; }
-
-html {
-  color: black;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 20px;
-  text-decoration: none;
-  text-transform: none; }
-html:not(#_1) .events_header, html:not(#_1) .events > ._header, html:not(#_1) .events[data-octave~=_header] ._header, html:not(#_1) .events[data-octave~=_] ._header, html:not(#_1) .events > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .events > meta[data-octave~=_] ~ * ._header, html:not(#_1) .resources h2, html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources[data-octave~=_header] ._header, html:not(#_1) .resources[data-octave~=_] ._header, html:not(#_1) .resources > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._header, html strong,
-html h1, html h2, html h3, html h4, html h5, html h6,
-html th, html:not(#_1) .yc_header, html:not(#_1) .yc > ._header, html:not(#_1) .yc[data-octave~=_header] ._header, html:not(#_1) .yc[data-octave~=_] ._header, html:not(#_1) .yc > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._header, html:not(#_1) .livefeed_header, html:not(#_1) .livefeed > ._header, html:not(#_1) .livefeed[data-octave~=_header] ._header, html:not(#_1) .livefeed[data-octave~=_] ._header, html:not(#_1) .livefeed > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .livefeed > meta[data-octave~=_] ~ * ._header {
-  font-weight: bold; }
-html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html em {
-  font-style: italic; }
-html {
-  font-size: 14px;
-  color: #173c4e; }
-html a, html .page-footer_blue, html .page-footer > ._blue, html .page-footer[data-octave~=_blue] ._blue, html .page-footer[data-octave~=_] ._blue, html .page-footer > meta[data-octave~=_blue] ~ * ._blue, html .page-footer > meta[data-octave~=_] ~ * ._blue {
-  color: #416b80; }
-html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description, html:not(#_1) .yc p {
-  color: #777777; }
-html .page-header_social a:hover, html .page-header > ._social a:hover, html .page-header[data-octave~=_social] ._social a:hover, html .page-header[data-octave~=_] ._social a:hover, html .page-header > meta[data-octave~=_social] ~ * ._social a:hover, html .page-header > meta[data-octave~=_] ~ * ._social a:hover, html .page-header_social a:focus, html .page-header > ._social a:focus, html .page-header[data-octave~=_social] ._social a:focus, html .page-header[data-octave~=_] ._social a:focus, html .page-header > meta[data-octave~=_social] ~ * ._social a:focus, html .page-header > meta[data-octave~=_] ~ * ._social a:focus {
-  color: #e6e6e6; }
-html .page-header_social a, html .page-header > ._social a, html .page-header[data-octave~=_social] ._social a, html .page-header[data-octave~=_] ._social a, html .page-header > meta[data-octave~=_social] ~ * ._social a, html .page-header > meta[data-octave~=_] ~ * ._social a, html:not(#_1):not(#_2) .button, html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description {
-  color: white; }
-html a:hover, html a:focus, html .page-footer_yellow, html .page-footer > ._yellow, html .page-footer[data-octave~=_yellow] ._yellow, html .page-footer[data-octave~=_] ._yellow, html .page-footer > meta[data-octave~=_yellow] ~ * ._yellow, html .page-footer > meta[data-octave~=_] ~ * ._yellow {
-  color: #d7bd27; }
-html .page-header_social a, html .page-header > ._social a, html .page-header[data-octave~=_social] ._social a, html .page-header[data-octave~=_] ._social a, html .page-header > meta[data-octave~=_social] ~ * ._social a, html .page-header > meta[data-octave~=_] ~ * ._social a {
-  text-shadow: 0 -1px 0 rgba(51, 51, 51, 0.5); }
-html .page-footer, html:not(#_1) .resources h3, html:not(#_1) .resources_note, html:not(#_1) .resources > ._note, html:not(#_1) .resources[data-octave~=_note] ._note, html:not(#_1) .resources[data-octave~=_] ._note, html:not(#_1) .resources > meta[data-octave~=_note] ~ * ._note, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._note, html:not(#_1) .resources_description, html:not(#_1) .resources > ._description, html:not(#_1) .resources[data-octave~=_description] ._description, html:not(#_1) .resources[data-octave~=_] ._description, html:not(#_1) .resources > meta[data-octave~=_description] ~ * ._description, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._description, html:not(#_1) .yc p {
-  font-size: 12px; }
-html:not(#_1):not(#_2) .button {
-  padding: 10px;
-  border-radius: 5px;
-  background: #416b80; }
-  html:not(#_1):not(#_2) .button:hover, html:not(#_1):not(#_2) .button:focus {
-    background: #d7bd27; }
-html:not(#_1) .events {
-  padding: 0 20px 20px 20px; }
-  html:not(#_1) .events iframe {
-    display: block;
+footer, header, section, main {
+    margin: 0;
+    padding: 0;
     border: 0;
-    width: 100%;
-    height: 640px;
-    max-height: 60vh; }
-  html:not(#_1) .events_header, html:not(#_1) .events > ._header, html:not(#_1) .events[data-octave~=_header] ._header, html:not(#_1) .events[data-octave~=_] ._header, html:not(#_1) .events > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .events > meta[data-octave~=_] ~ * ._header {
+    outline: 0;
+}
+
+html {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 14px;
+    color: #173c4e;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: bold;
+}
+
+.page-header_description,
+.page-header > ._description,
+.page-header[data-octave~=_description] ._description,
+.page-header[data-octave~=_] ._description,
+.resources h3,
+.resources_note,
+.resources > ._note,
+.resources[data-octave~=_note] ._note,
+.resources[data-octave~=_] ._note,
+em {
+    font-style: italic;
+}
+
+a,
+.page-footer_blue,
+.page-footer > ._blue,
+.page-footer[data-octave~=_blue] ._blue,
+.page-footer[data-octave~=_] ._blue {
+    color: #416b80;
+}
+
+.page-main_call-to-action,
+.page-main > ._call-to-action,
+.page-main[data-octave~=_call-to-action] ._call-to-action,
+.page-main[data-octave~=_] ._call-to-action,
+.resources h3,
+.resources_note,
+.resources > ._note,
+.resources[data-octave~=_note] ._note,
+.resources[data-octave~=_] ._note,
+.resources_description,
+.resources > ._description,
+.resources[data-octave~=_description] ._description,
+.resources[data-octave~=_] ._description {
+    color: #777777;
+}
+
+.page-header_social a:hover,
+.page-header > ._social a:hover,
+.page-header[data-octave~=_social] ._social a:hover,
+.page-header[data-octave~=_] ._social a:hover,
+.page-header_social a:focus,
+.page-header > ._social a:focus,
+.page-header[data-octave~=_social] ._social a:focus,
+.page-header[data-octave~=_] ._social a:focus {
+    color: #e6e6e6;
+}
+
+.page-header_social a,
+.page-header > ._social a,
+.page-header[data-octave~=_social] ._social a,
+.page-header[data-octave~=_] ._social a,
+.button,
+.page-header_description,
+.page-header > ._description,
+.page-header[data-octave~=_description] ._description,
+.page-header[data-octave~=_] ._description {
+    color: white;
+}
+
+a:hover,
+a:focus,
+.page-footer_yellow,
+.page-footer > ._yellow,
+.page-footer[data-octave~=_yellow] ._yellow,
+.page-footer[data-octave~=_] ._yellow {
+    color: #d7bd27;
+}
+
+.page-header_social a,
+.page-header > ._social a,
+.page-header[data-octave~=_social] ._social a,
+.page-header[data-octave~=_] ._social a {
+    text-shadow: 0 -1px 0 rgba(51, 51, 51, 0.5);
+}
+
+.page-footer,
+.resources h3,
+.resources_note,
+.resources > ._note,
+.resources[data-octave~=_note] ._note,
+.resources[data-octave~=_] ._note,
+.resources_description,
+.resources > ._description,
+.resources[data-octave~=_description] ._description,
+.resources[data-octave~=_] ._description {
+    font-size: 12px;
+}
+
+.button {
     padding: 10px;
-    border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 10px; }
-  html:not(#_1) .events_embed, html:not(#_1) .events > ._embed, html:not(#_1) .events[data-octave~=_embed] ._embed, html:not(#_1) .events[data-octave~=_] ._embed, html:not(#_1) .events > meta[data-octave~=_embed] ~ * ._embed, html:not(#_1) .events > meta[data-octave~=_] ~ * ._embed {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; }
-html .page {
-  background: #f3f3f3; }
-html .page-footer {
-  padding: 20px; }
-  html .page-footer_left, html .page-footer > ._left, html .page-footer[data-octave~=_left] ._left, html .page-footer[data-octave~=_] ._left, html .page-footer > meta[data-octave~=_left] ~ * ._left, html .page-footer > meta[data-octave~=_] ~ * ._left {
+    border-radius: 5px;
+    background: #416b80;
+}
+
+.button:hover,
+.button:focus {
+    background: #d7bd27;
+}
+
+.page {
+    background: #f3f3f3;
+}
+
+.page-footer {
+    padding: 20px;
+}
+
+.page-footer_left, .page-footer > ._left, .page-footer[data-octave~=_left] ._left,
+.page-footer[data-octave~=_] ._left {
     float: left;
     width: 50%;
     text-align: right;
-    padding-right: 10px; }
-  html .page-footer_right, html .page-footer > ._right, html .page-footer[data-octave~=_right] ._right, html .page-footer[data-octave~=_] ._right, html .page-footer > meta[data-octave~=_right] ~ * ._right, html .page-footer > meta[data-octave~=_] ~ * ._right {
+    padding-right: 10px;
+}
+
+.page-footer_right,
+.page-footer > ._right,
+.page-footer[data-octave~=_right] ._right,
+.page-footer[data-octave~=_] ._right {
     float: right;
     width: 50%;
     text-align: left;
-    padding-left: 10px; }
-  html .page-footer_about, html .page-footer > ._about, html .page-footer[data-octave~=_about] ._about, html .page-footer[data-octave~=_] ._about, html .page-footer > meta[data-octave~=_about] ~ * ._about, html .page-footer > meta[data-octave~=_] ~ * ._about {
+    padding-left: 10px;
+}
+
+.page-footer_about,
+.page-footer > ._about,
+.page-footer[data-octave~=_about] ._about,
+.page-footer[data-octave~=_] ._about {
     overflow: hidden;
     max-width: 640px;
-    margin: 0 auto; }
-    html .page-footer_about p, html .page-footer > ._about p, html .page-footer[data-octave~=_about] ._about p, html .page-footer[data-octave~=_] ._about p, html .page-footer > meta[data-octave~=_about] ~ * ._about p, html .page-footer > meta[data-octave~=_] ~ * ._about p {
-      margin-bottom: 20px; }
-  html .page-footer_extra-information, html .page-footer > ._extra-information, html .page-footer[data-octave~=_extra-information] ._extra-information, html .page-footer[data-octave~=_] ._extra-information, html .page-footer > meta[data-octave~=_extra-information] ~ * ._extra-information, html .page-footer > meta[data-octave~=_] ~ * ._extra-information {
-    text-align: center; }
-html .page-header {
-  zoom: 1;
-  background-color: #416b80;
-  /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#4a7991), to(#416b80));
-  /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #4a7991, #416b80);
-  /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, #4a7991, #416b80);
-  /* FF3.6 */
-  background-image: -ms-linear-gradient(top, #4a7991, #416b80);
-  /* IE10 */
-  background-image: -o-linear-gradient(top, #4a7991, #416b80);
-  /* Opera 11.10+ */
-  background-image: linear-gradient(top, #4a7991, #416b80);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#4a7991', EndColorStr='#416b80');
-  border-bottom: 2px solid #385d6f;
-  position: fixed;
-  width: 100%; }
-  html .page-header:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html .page-header:after {
+    margin: 0 auto;
+}
+
+.page-footer_about p,
+.page-footer > ._about p,
+.page-footer[data-octave~=_about] ._about p,
+.page-footer[data-octave~=_] ._about p {
+    margin-bottom: 20px;
+}
+
+.page-footer_extra-information,
+.page-footer > ._extra-information,
+.page-footer[data-octave~=_extra-information] ._extra-information,
+.page-footer[data-octave~=_] ._extra-information {
+    text-align: center;
+}
+
+.page-header {
+    zoom: 1;
+    background-color: #416b80;
+    background-image: linear-gradient(to bottom, #4a7991, #416b80);
+    border-bottom: 2px solid #385d6f;
+    position: fixed;
+    width: 100%;
+}
+
+.page-header:before {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden;
-    clear: both; }
-  @media (max-width: 960px) {
-    html .page-header {
-      position: static; } }
-  html .page-header_logo, html .page-header > ._logo, html .page-header[data-octave~=_logo] ._logo, html .page-header[data-octave~=_] ._logo, html .page-header > meta[data-octave~=_logo] ~ * ._logo, html .page-header > meta[data-octave~=_] ~ * ._logo {
+}
+
+.page-header:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.page-header_logo,
+.page-header > ._logo,
+.page-header[data-octave~=_logo] ._logo,
+.page-header[data-octave~=_] ._logo {
     display: block;
     text-indent: -999999px;
     width: 200px;
@@ -169,164 +239,227 @@ html .page-header {
     margin: 14px 20px;
     float: left;
     background: url("/images/logo.png") no-repeat center left;
-    background-size: 198px 32px; }
-    @media (max-width: 960px) {
-      html .page-header_logo, html .page-header > ._logo, html .page-header[data-octave~=_logo] ._logo, html .page-header[data-octave~=_] ._logo, html .page-header > meta[data-octave~=_logo] ~ * ._logo, html .page-header > meta[data-octave~=_] ~ * ._logo {
+    background-size: 198px 32px;
+}
+
+.page-header_description,
+.page-header > ._description,
+.page-header[data-octave~=_description] ._description,
+.page-header[data-octave~=_] ._description {
+    padding: 14px;
+    float: left;
+    line-height: 32px;
+}
+
+.page-header_social,
+.page-header > ._social,
+.page-header[data-octave~=_social] ._social,
+.page-header[data-octave~=_] ._social {
+    margin: 14px;
+    width: 180px;
+    float: right;
+}
+
+.page-header_social li,
+.page-header > ._social li,
+.page-header[data-octave~=_social] ._social li,
+.page-header[data-octave~=_] ._social li {
+    float: left;
+    width: 60px;
+}
+
+.page-header_social a,
+.page-header > ._social a,
+.page-header[data-octave~=_social] ._social a,
+.page-header[data-octave~=_] ._social a {
+    display: block;
+    padding: 0 20px;
+}
+
+.page-header_social i,
+.page-header > ._social i,
+.page-header[data-octave~=_social] ._social i,
+.page-header[data-octave~=_] ._social i {
+    line-height: 32px;
+}
+
+.page-main {
+    zoom: 1;
+    background: white;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 72px;
+    width: 100%;
+}
+
+.page-main:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.page-main:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.page-main_left,
+.page-main > ._left,
+.page-main[data-octave~=_left] ._left,
+.page-main[data-octave~=_] ._left {
+    float: left;
+    width: 50%;
+}
+
+.page-main_right,
+.page-main > ._right,
+.page-main[data-octave~=_right] ._right,
+.page-main[data-octave~=_] ._right {
+    float: right;
+    width: 50%;
+}
+
+.page-main_call-to-action,
+.page-main > ._call-to-action,
+.page-main[data-octave~=_call-to-action] ._call-to-action,
+.page-main[data-octave~=_] ._call-to-action {
+    padding: 20px 0;
+    line-height: 60px;
+    text-align: center;
+    clear: both;
+}
+
+.resources {
+    zoom: 1;
+    clear: both;
+    padding: 0 20px 20px 20px;
+}
+
+.resources:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.resources:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.resources ul {
+    margin-bottom: 20px;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+.resources_left,
+.resources > ._left,
+.resources[data-octave~=_left] ._left,
+.resources[data-octave~=_] ._left {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.resources_right,
+.resources > ._right,
+.resources[data-octave~=_right] ._right,
+.resources[data-octave~=_] ._right {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.resources_header,
+.resources > ._header,
+.resources[data-octave~=_header] ._header,
+.resources[data-octave~=_] ._header {
+    padding: 10px;
+    border-bottom: 2px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.resources_name,
+.resources > ._name,
+.resources[data-octave~=_name] ._name,
+.resources[data-octave~=_] ._name {
+    display: block;
+    text-indent: -20px;
+    padding-left: 20px;
+}
+
+@media (max-width: 960px) {
+    .page-header {
+        position: static;
+    }
+
+    .page-header_logo,
+    .page-header > ._logo,
+    .page-header[data-octave~=_logo] ._logo,
+    .page-header[data-octave~=_] ._logo {
         float: none;
         margin: 0;
         width: 100%;
         background-position: center center;
-        height: 50px; } }
-  html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description {
-    padding: 14px;
-    float: left;
-    line-height: 32px; }
-    @media (max-width: 1200px) {
-      html .page-header_description, html .page-header > ._description, html .page-header[data-octave~=_description] ._description, html .page-header[data-octave~=_] ._description, html .page-header > meta[data-octave~=_description] ~ * ._description, html .page-header > meta[data-octave~=_] ~ * ._description {
-        display: none; } }
-  html .page-header_social, html .page-header > ._social, html .page-header[data-octave~=_social] ._social, html .page-header[data-octave~=_] ._social, html .page-header > meta[data-octave~=_social] ~ * ._social, html .page-header > meta[data-octave~=_] ~ * ._social {
-    margin: 14px;
-    width: 180px;
-    float: right; }
-    html .page-header_social li, html .page-header > ._social li, html .page-header[data-octave~=_social] ._social li, html .page-header[data-octave~=_] ._social li, html .page-header > meta[data-octave~=_social] ~ * ._social li, html .page-header > meta[data-octave~=_] ~ * ._social li {
-      float: left;
-      width: 60px; }
-    html .page-header_social a, html .page-header > ._social a, html .page-header[data-octave~=_social] ._social a, html .page-header[data-octave~=_] ._social a, html .page-header > meta[data-octave~=_social] ~ * ._social a, html .page-header > meta[data-octave~=_] ~ * ._social a {
-      display: block;
-      padding: 0 20px; }
-    html .page-header_social i, html .page-header > ._social i, html .page-header[data-octave~=_social] ._social i, html .page-header[data-octave~=_] ._social i, html .page-header > meta[data-octave~=_social] ~ * ._social i, html .page-header > meta[data-octave~=_] ~ * ._social i {
-      line-height: 32px; }
-    @media (max-width: 960px) {
-      html .page-header_social, html .page-header > ._social, html .page-header[data-octave~=_social] ._social, html .page-header[data-octave~=_] ._social, html .page-header > meta[data-octave~=_social] ~ * ._social, html .page-header > meta[data-octave~=_] ~ * ._social {
-        display: none; } }
-html .page-main {
-  zoom: 1;
-  background: white;
-  border-bottom: 1px solid #e6e6e6;
-  padding-top: 72px;
-  width: 100%; }
-  html .page-main:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html .page-main:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-  @media (max-width: 960px) {
-    html .page-main {
-      padding-top: 10px; } }
-  html .page-main_left, html .page-main > ._left, html .page-main[data-octave~=_left] ._left, html .page-main[data-octave~=_] ._left, html .page-main > meta[data-octave~=_left] ~ * ._left, html .page-main > meta[data-octave~=_] ~ * ._left {
-    float: left;
-    width: 50%; }
-    @media (max-width: 960px) {
-      html .page-main_left, html .page-main > ._left, html .page-main[data-octave~=_left] ._left, html .page-main[data-octave~=_] ._left, html .page-main > meta[data-octave~=_left] ~ * ._left, html .page-main > meta[data-octave~=_] ~ * ._left {
+        height: 50px;
+    }
+
+    .page-header_description,
+    .page-header > ._description,
+    .page-header[data-octave~=_description] ._description,
+    .page-header[data-octave~=_] ._description {
+        display: none;
+    }
+
+    .page-header_social,
+    .page-header > ._social,
+    .page-header[data-octave~=_social] ._social,
+    .page-header[data-octave~=_] ._social {
+        display: none;
+    }
+
+    .page-main {
+        padding-top: 10px;
+    }
+
+    .page-main_left,
+    .page-main > ._left,
+    .page-main[data-octave~=_left] ._left,
+    .page-main[data-octave~=_] ._left {
         float: none;
-        width: 100%; } }
-  html .page-main_right, html .page-main > ._right, html .page-main[data-octave~=_right] ._right, html .page-main[data-octave~=_] ._right, html .page-main > meta[data-octave~=_right] ~ * ._right, html .page-main > meta[data-octave~=_] ~ * ._right {
-    float: right;
-    width: 50%; }
-    @media (max-width: 960px) {
-      html .page-main_right, html .page-main > ._right, html .page-main[data-octave~=_right] ._right, html .page-main[data-octave~=_] ._right, html .page-main > meta[data-octave~=_right] ~ * ._right, html .page-main > meta[data-octave~=_] ~ * ._right {
+        width: 100%;
+    }
+
+    .page-main_right,
+    .page-main > ._right,
+    .page-main[data-octave~=_right] ._right,
+    .page-main[data-octave~=_] ._right {
         float: none;
-        width: 100%; } }
-  html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action {
-    padding: 20px 0;
-    line-height: 60px;
-    text-align: center;
-    clear: both; }
-    @media (max-width: 960px) {
-      html .page-main_call-to-action, html .page-main > ._call-to-action, html .page-main[data-octave~=_call-to-action] ._call-to-action, html .page-main[data-octave~=_] ._call-to-action, html .page-main > meta[data-octave~=_call-to-action] ~ * ._call-to-action, html .page-main > meta[data-octave~=_] ~ * ._call-to-action {
-        display: none; } }
-html:not(#_1) .resources {
-  zoom: 1;
-  clear: both;
-  padding: 0 20px 20px 20px; }
-  html:not(#_1) .resources:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html:not(#_1) .resources:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-  html:not(#_1) .resources ul {
-    margin-bottom: 20px; }
-  html:not(#_1) .resources li {
-    margin: 10px 0; }
-  html:not(#_1) .resources_left, html:not(#_1) .resources > ._left, html:not(#_1) .resources[data-octave~=_left] ._left, html:not(#_1) .resources[data-octave~=_] ._left, html:not(#_1) .resources > meta[data-octave~=_left] ~ * ._left, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._left {
-    float: left;
-    width: 50%;
-    padding: 0 10px; }
-  html:not(#_1) .resources_right, html:not(#_1) .resources > ._right, html:not(#_1) .resources[data-octave~=_right] ._right, html:not(#_1) .resources[data-octave~=_] ._right, html:not(#_1) .resources > meta[data-octave~=_right] ~ * ._right, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._right {
-    float: left;
-    width: 50%;
-    padding: 0 10px; }
-  html:not(#_1) .resources_header, html:not(#_1) .resources > ._header, html:not(#_1) .resources[data-octave~=_header] ._header, html:not(#_1) .resources[data-octave~=_] ._header, html:not(#_1) .resources > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._header {
-    padding: 10px;
-    border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 10px; }
-  html:not(#_1) .resources_name, html:not(#_1) .resources > ._name, html:not(#_1) .resources[data-octave~=_name] ._name, html:not(#_1) .resources[data-octave~=_] ._name, html:not(#_1) .resources > meta[data-octave~=_name] ~ * ._name, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._name {
-    display: block;
-    text-indent: -20px;
-    padding-left: 20px; }
-    @media (max-width: 960px) {
-      html:not(#_1) .resources_name, html:not(#_1) .resources > ._name, html:not(#_1) .resources[data-octave~=_name] ._name, html:not(#_1) .resources[data-octave~=_] ._name, html:not(#_1) .resources > meta[data-octave~=_name] ~ * ._name, html:not(#_1) .resources > meta[data-octave~=_] ~ * ._name {
+        width: 100%;
+    }
+
+    .page-main_call-to-action,
+    .page-main > ._call-to-action,
+    .page-main[data-octave~=_call-to-action] ._call-to-action,
+    .page-main[data-octave~=_] ._call-to-action {
+        display: none;
+    }
+
+    .resources_name,
+    .resources > ._name,
+    .resources[data-octave~=_name] ._name,
+    .resources[data-octave~=_] ._name {
         text-indent: 0;
-        padding-left: 0; } }
-html:not(#_1) .yc {
-  zoom: 1;
-  padding: 20px 20px 0 20px; }
-  html:not(#_1) .yc:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html:not(#_1) .yc:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-  html:not(#_1) .yc_header, html:not(#_1) .yc > ._header, html:not(#_1) .yc[data-octave~=_header] ._header, html:not(#_1) .yc[data-octave~=_] ._header, html:not(#_1) .yc > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._header {
-    padding: 10px;
-    border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 10px; }
-  html:not(#_1) .yc_logo, html:not(#_1) .yc > ._logo, html:not(#_1) .yc[data-octave~=_logo] ._logo, html:not(#_1) .yc[data-octave~=_] ._logo, html:not(#_1) .yc > meta[data-octave~=_logo] ~ * ._logo, html:not(#_1) .yc > meta[data-octave~=_] ~ * ._logo {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle; }
-  html:not(#_1) .yc p {
-    margin: 10px; }
-html:not(#_1) .livefeed {
-  zoom: 1;
-  padding: 0 20px 20px 20px; }
-  html:not(#_1) .livefeed:before {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  html:not(#_1) .livefeed:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-  html:not(#_1) .livefeed iframe {
-    display: block !important;
-    width: 100% !important;
-    height: 650px !important;
-    max-height: calc(60vh + 10px) !important; }
-  html:not(#_1) .livefeed_header, html:not(#_1) .livefeed > ._header, html:not(#_1) .livefeed[data-octave~=_header] ._header, html:not(#_1) .livefeed[data-octave~=_] ._header, html:not(#_1) .livefeed > meta[data-octave~=_header] ~ * ._header, html:not(#_1) .livefeed > meta[data-octave~=_] ~ * ._header {
-    padding: 10px;
-    border-bottom: 2px solid #e6e6e6;
-    margin-bottom: 0; }
-  html:not(#_1) .livefeed_embed, html:not(#_1) .livefeed > ._embed, html:not(#_1) .livefeed[data-octave~=_embed] ._embed, html:not(#_1) .livefeed[data-octave~=_] ._embed, html:not(#_1) .livefeed > meta[data-octave~=_embed] ~ * ._embed, html:not(#_1) .livefeed > meta[data-octave~=_] ~ * ._embed {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; }
+        padding-left: 0;
+    }
+}
+
