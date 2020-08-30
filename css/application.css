@@ -166,6 +166,7 @@ a:focus,
 .button:hover,
 .button:focus {
     background: var(--yellow);
+    color: white;
 }
 
 .page {
@@ -304,9 +305,9 @@ a:focus,
 .page-main > ._call-to-action,
 .page-main[data-octave~=_call-to-action] ._call-to-action,
 .page-main[data-octave~=_] ._call-to-action {
-    padding: 20px 0;
-    line-height: 60px;
+    line-height: 42px;
     text-align: center;
+    margin-bottom: 32px;
     clear: both;
 }
 
@@ -396,13 +397,6 @@ a:focus,
 
     .page-main {
         padding-top: 10px;
-    }
-
-    .page-main_call-to-action,
-    .page-main > ._call-to-action,
-    .page-main[data-octave~=_call-to-action] ._call-to-action,
-    .page-main[data-octave~=_] ._call-to-action {
-        display: none;
     }
 
     .resources_name,
