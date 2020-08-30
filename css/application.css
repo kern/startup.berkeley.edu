@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+html {
+    --blue: #173c4e;
+    --yellow: #d7bd27;
+
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.35em;
+    color: var(--blue);
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, address, cite, code, del,
 dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup,
@@ -10,12 +20,6 @@ tbody, tfoot, thead, tr, th, td {
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
 }
 
 ol, ul {
@@ -38,21 +42,9 @@ footer, header, section, main {
     outline: 0;
 }
 
-html {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 20px;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 14px;
-    color: #173c4e;
-}
-
 h1, h2, h3, h4, h5, h6, th {
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .resources {
@@ -142,7 +134,7 @@ a:focus,
 .page-footer > ._yellow,
 .page-footer[data-octave~=_yellow] ._yellow,
 .page-footer[data-octave~=_] ._yellow {
-    color: #d7bd27;
+    color: var(--yellow);
 }
 
 .page-header_social a,
@@ -173,7 +165,7 @@ a:focus,
 
 .button:hover,
 .button:focus {
-    background: #d7bd27;
+    background: var(--yellow);
 }
 
 .page {
@@ -337,6 +329,10 @@ a:focus,
 
 .resources li {
     margin: 10px 0;
+}
+
+._header {
+    font-weight: bold;
 }
 
 .resources_header,
