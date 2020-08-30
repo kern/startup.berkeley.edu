@@ -154,7 +154,7 @@ a:focus,
 .resources > ._description,
 .resources[data-octave~=_description] ._description,
 .resources[data-octave~=_] ._description {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .button {
@@ -173,7 +173,10 @@ a:focus,
 }
 
 .page-footer {
-    padding: 20px;
+    max-width: 640px;
+    width: 96%;
+    margin: 20px auto 0 auto;
+    padding-bottom: 20px;
 }
 
 .page-footer_about,
@@ -181,7 +184,6 @@ a:focus,
 .page-footer[data-octave~=_about] ._about,
 .page-footer[data-octave~=_] ._about {
     overflow: hidden;
-    max-width: 640px;
     margin: 0 auto;
 }
 
